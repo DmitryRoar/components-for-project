@@ -1,0 +1,23 @@
+<div class="wrap">
+  <div class="card">
+    <div class="header" *ngIf="lastLesson">
+      <div class="header__time">
+        <img src="assets/img/clock.svg" alt="">
+        {{lastLesson}}
+      </div>
+      <div class="header__text">
+        before the lesson
+      </div>
+    </div>
+
+    <div class="content">
+      <div class="content__img" *ngIf="img">
+        <img [src]="img" alt="student-img">
+      </div>
+    </div>
+
+    <div class="footer">
+      footer
+    </div>
+  </div>
+</div>

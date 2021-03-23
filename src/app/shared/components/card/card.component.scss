@@ -1,0 +1,40 @@
+@import "src/assets/styles/var";
+
+.card {
+  display: flex;
+  width: 345px;
+  height: 174px;
+  flex-direction: column;
+  border-radius: $card-student-border-radius;
+  background: $card-student-content-background;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: $card-student-border-radius $card-student-border-radius 0 0;
+  background: $card-student-content-header-background;
+  color: #fff;
+  font-size: 15px;
+  font-weight: 700;
+  text-transform: uppercase;
+
+  &__time {
+    display: flex;
+    align-items: center;
+    font-size: 22px;
+  }
+}
+
+.content {
+  display: flex;
+
+  &__img {
+    img {
+      border-radius: 50%;
+      width: $card-student-content-img-width;
+      height: $card-student-content-img-height;
+    }
+  }
+}
