@@ -1,0 +1,52 @@
+<div class="backdrop" (click)="onClose()"></div>
+
+<div class="wrap">
+  <div class="header-container container">
+    <div class="header">
+      <div class="header-content">
+        <h3>{{teacher.firstName}}</h3>
+        <p>{{teacher.lastName}}</p>
+      </div>
+      <div class="avatar">
+        <img [src]="teacher.img" alt="">
+      </div>
+    </div>
+  </div>
+
+  <div class="list-container container">
+    <nav class="list">
+      <ul>
+        <li *ngFor="let list of lists">
+          <a
+            [routerLink]="['/', list.path]"
+            routerLinkActive="active"
+          >
+            {{list.title}}
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+
+  <div class="container-footer container">
+    <div class="footer-img">
+      <img src="assets/img/drawer/email.png" alt="">
+    </div>
+    <div class="footer">
+      <div class="headline">
+        <h2>Contact with us</h2>
+      </div>
+      <ul>
+        <li>+923341108527</li>
+        <li>infogenie@mail.com</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="sub-footer__container container">
+    <div class="sub-footer">
+      <button>Logout</button>
+      <img src="../../../../assets/img/drawer/logout.svg" alt="logout">
+    </div>
+  </div>
+</div>

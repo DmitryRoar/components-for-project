@@ -7,34 +7,38 @@
   flex-direction: column;
   border-radius: $card-student-border-radius;
   background: $card-student-content-background;
+  box-shadow: 5px 5px 30px rgba(65, 98, 169, 0.2);
 }
 
-.header {
+.content-wrap {
+  padding: 0 14px;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  height: $card-student-content-header-height;
+}
+
+.header {
+  overflow-y: hidden;
   border-radius: $card-student-border-radius $card-student-border-radius 0 0;
   background: $card-student-content-header-background;
   color: #fff;
-  font-size: 15px;
-  font-weight: 700;
-  text-transform: uppercase;
+
+  &__text {
+    font-weight: 700;
+  }
 
   &__time {
     display: flex;
     align-items: center;
-    font-size: 22px;
-  }
-}
 
-.content {
-  display: flex;
-
-  &__img {
     img {
-      border-radius: 50%;
-      width: $card-student-content-img-width;
-      height: $card-student-content-img-height;
+      position: absolute;
     }
   }
 }
+
+.container {
+  display: flex;
+}
+
