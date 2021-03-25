@@ -1,0 +1,30 @@
+<div class="card-blue" *ngIf="status.completed; else notCompleted">
+  <div class="action">
+    <img
+      src="assets/img/success.svg"
+      alt="success"
+    >
+  </div>
+  <div class="card-blue__content homework-status__content column">
+    <h3>Homework is done</h3>
+    <div class="date" *ngIf="status.date">
+      <mat-icon matDatepickerToggleIcon>calendar_today</mat-icon>
+      <p>{{status.date}}</p>
+    </div>
+  </div>
+</div>
+
+<ng-template #notCompleted>
+  <div class="card-blue">
+    <div class="action">
+      <img
+        src="assets/img/failure.svg"
+        alt="success"
+      >
+
+    </div>
+    <div class="card-blue__content homework-status__content column">
+      <h3>Homework not done</h3>
+    </div>
+  </div>
+</ng-template>

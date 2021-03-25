@@ -1,0 +1,13 @@
+<div class="card-blue" *ngIf="feedbackInfo; else empty">
+  <div class="action">
+    <a href="#">Past lesson</a>
+  </div>
+  <div class="card-blue__content">
+    <h3>{{feedbackInfo.text}}</h3>
+    <img [src]="feedbackInfo.emoji" alt="">
+  </div>
+</div>
+
+<ng-template #empty>
+  <p>feedback must contain string and emoji img</p>
+</ng-template>

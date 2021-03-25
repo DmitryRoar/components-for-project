@@ -1,24 +1,8 @@
-// Custom Theming for Angular Material
-// For more information: https://material.angular.io/guide/theming
 @import '~@angular/material/theming';
-// Plus imports for other components in your app.
-
-// Include the common styles for Angular Material. We include this here so that you only
-// have to load a single css file for Angular Material in your app.
-// Be sure that you only ever include this mixin once!
 @include mat-core();
-
-// Define the palettes for your theme using the Material Design palettes available in palette.scss
-// (imported above). For each palette, you can optionally specify a default, lighter, and darker
-// hue. Available color palettes: https://material.io/design/color/
 $components-for-project-primary: mat-palette($mat-indigo);
 $components-for-project-accent: mat-palette($mat-pink, A200, A100, A400);
-
-// The warn palette is optional (defaults to red).
 $components-for-project-warn: mat-palette($mat-red);
-
-// Create the theme object. A theme consists of configurations for individual
-// theming systems such as "color" or "typography".
 $components-for-project-theme: mat-light-theme((
   color: (
     primary: $components-for-project-primary,
@@ -29,7 +13,7 @@ $components-for-project-theme: mat-light-theme((
 
 @include angular-material-theme($components-for-project-theme);
 
-@import "assets/styles/index.scss";
+@import "assets/styles/index";
 @import "assets/styles/fonts";
 
 * {
@@ -37,7 +21,14 @@ $components-for-project-theme: mat-light-theme((
 }
 
 body {
-  background: green;
+  background: #37ffd0;
+}
+
+.container-right {
+  display: flex;
+  justify-content: flex-end;
+  padding: $drawer-padding;
+  text-align: right;
 }
 
 .text__headline {
@@ -48,12 +39,166 @@ body {
 
 .text__content {
   font-size: 15px;
-} // Обдумать
+}
 
 .avatar {
   img {
     border-radius: 50%;
     width: $card-student-content-img-width;
     height: $card-student-content-img-height;
+  }
+}
+
+.button {
+  z-index: 1;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  font-size: 20px;
+
+  &-default {
+    background: #fff;
+    color: #000;
+  }
+
+  &-confirm {
+    background: $orange-color;
+  }
+}
+
+.mat-checkbox-checked.mat-accent .mat-checkbox-ripple .mat-ripple-element {
+  opacity: 0.03;
+  background-color: $orange-color;
+}
+
+mat-checkbox .mat-checkbox-inner-container {
+  width: $checkbox-width;
+  height: $checkbox-height;
+}
+
+.mat-checkbox-checked.mat-accent .mat-checkbox-background,.mat-checkbox-indeterminate.mat-accent .mat-checkbox-background {
+  background-color: $orange-color;
+}
+
+.mat-checkbox .mat-checkbox-frame {
+  border: 2px solid $gray-color;
+}
+
+.dot {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+
+  &-pink {
+    background: #D53B64;
+  }
+
+  &-orange {
+    background: #F09D37;
+  }
+
+  &-green {
+    background: $green-color;
+  }
+
+  &-blue {
+    background: #4252AF;
+  }
+
+  &-gradient {
+    background: linear-gradient(90deg, #2C83DA 0%, #4AB7F8 100%);
+  }
+
+  &-purple {
+    background: #8F36AA;
+  }
+}
+
+.input {
+  display: inline-flex;
+  flex-direction: column;
+
+  input, label, mat-label {
+    text-align: right;
+  }
+
+  label {
+    margin-bottom: 6px;
+    font-size: 16px;
+  }
+
+  input {
+    padding: 15px 18px;
+    font-size: 18px;
+    color: #B1BAC9;
+    background: none;
+  }
+
+  div {
+    background: #fff;
+    border: 2px solid #fff;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    padding: 0 10px 0 0;
+
+    img {
+      margin-left: 22px;
+    }
+  }
+}
+
+.card-blue {
+  color: #fff;
+  display:  flex;
+  background: $blue-gradient;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 15px;
+
+  .action {
+    a {
+      color: #fff;
+      background: $green-color;
+      padding: 4px 25px;
+      font-size: 12px;
+      border-radius: 30px;
+    }
+  }
+
+  &__content {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    font-weight: 700;
+
+    img {
+      margin-left: 13px;
+    }
+
+    &.column {
+      flex-direction: column;
+      align-items: flex-end;
+    }
+
+    .date {
+      display: flex;
+      align-items: center;
+      margin-top: 5px;
+
+      .mat-icon  {
+        font-size: 11px;
+        height: auto;
+        width: auto;
+        margin-right: 5px;
+      }
+    }
+
+    &.homework-status__content {
+      h3 {
+        font-size: 20px;
+      }
+    }
   }
 }

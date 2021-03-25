@@ -1,0 +1,23 @@
+<div class="wrap">
+  <div class="bell">
+    <img src="assets/img/notification/bell.svg">
+  </div>
+  <div class="container container-right">
+    <div class="headline">
+      Notification
+    </div>
+    <div class="text">
+      {{notification.text}}
+    </div>
+    <div class="date">
+      <mat-icon matDatepickerToggleIcon>calendar_today</mat-icon>
+      <p>{{notification.date}}</p>
+    </div>
+  </div>
+  <button
+    class="button button-confirm"
+    mat-flat-button
+  >
+    Ok
+  </button>
+</div>

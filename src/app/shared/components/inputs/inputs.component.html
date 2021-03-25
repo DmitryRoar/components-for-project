@@ -1,0 +1,18 @@
+<div class="wrap" *ngIf="inputs; else someInput">
+  <div class="input" *ngFor="let input of inputs">
+    <label [for]="input.htmlId" *ngIf="input.required; else inputNotRequired">
+      {{input.label}} *
+    </label>
+    <ng-template #inputNotRequired>
+      <label [for]="input.htmlId">{{input.label}} </label>
+    </ng-template>
+    <div>
+      <img [src]="input.img" [alt]="input.htmlId">
+      <input [id]="input.htmlId" type="text">
+    </div>
+  </div>
+</div>
+
+<ng-template #someInput>
+  <p>empty inputs</p>
+</ng-template>

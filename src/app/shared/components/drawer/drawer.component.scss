@@ -9,25 +9,22 @@
   background: #2C83DA;
   opacity: .9;
   cursor: pointer;
+  z-index: 2;
 }
 
 .wrap {
   width: $drawer-width;
   height: 100vh;
   background: #fff;
-  float: right;
-  position: relative;
-  z-index: 2;
+  position: absolute;
+  right: 0;
+  top: 0; // temp
+  z-index: 4;
   display: flex;
   flex-direction: column;
 }
 
-.container {
-  display: flex;
-  justify-content: flex-end;
-  padding: $drawer-padding;
-  text-align: right;
-}
+
 
 .header-container {
   border-bottom: 1px solid $drawer-hr-color;
@@ -89,8 +86,9 @@
 
 .footer {
   &-img {
-    position: relative;
-    top: 30px;
+    position: absolute;
+    left: -20px;
+    bottom: 42px;
   }
 
   ul {

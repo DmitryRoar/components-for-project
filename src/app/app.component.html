@@ -1,10 +1,86 @@
-<!-- card -->
-<!--<app-card-->
-<!--  [img]="img"-->
-<!--  [lastLesson]="lastLesson"-->
-<!--&gt;</app-card>-->
-
-
 <!-- drawer -->
-<button (click)="createDrawer()">open drawer</button>
-<ng-template drawerRef></ng-template>
+<div class="wrap">
+  <button
+    class="button button-default"
+    (click)="createDrawer()"
+    mat-flat-button
+  >
+    open drawer
+  </button>
+  <ng-template drawerRef></ng-template>
+</div>
+<!-- button -->
+<div class="wrap">
+  <button
+    class="button button-confirm"
+    mat-flat-button
+  >
+    confirm button
+  </button>
+  <button
+    class="button button-default"
+    mat-flat-button="primary"
+  >
+    default button
+  </button>
+</div>
+<!-- checkbox -->
+<div class="wrap">
+  <mat-checkbox></mat-checkbox>
+  <mat-checkbox></mat-checkbox>
+</div>
+<!-- select -->
+<div class="wrap">
+  <mat-form-field>
+    <mat-label>label</mat-label>
+    <mat-select>
+      <mat-option [value]="select.value">
+        foo
+      </mat-option>
+      <mat-option [value]="select.value">
+        bar
+      </mat-option>
+    </mat-select>
+  </mat-form-field>
+</div>
+<!-- dot -->
+<div class="wrap flex">
+  <div class="dot dot-pink"></div>
+  <div class="dot dot-orange"></div>
+  <div class="dot dot-blue"></div>
+  <div class="dot dot-purple"></div>
+  <div class="dot dot-gradient"></div>
+  <div class="dot dot-green"></div>
+</div>
+<!-- datepicker -->
+<div class="wrap">
+  <div class="input">
+    <mat-label>Data Picker</mat-label>
+    <div>
+      <input matInput [matDatepicker]="picker" readonly>
+      <mat-datepicker-toggle matSuffix [for]="picker">
+        <mat-icon matDatepickerToggleIcon>calendar_today</mat-icon>
+      </mat-datepicker-toggle>
+      <mat-datepicker #picker></mat-datepicker>
+    </div>
+  </div>
+</div>
+<!-- input -->
+<div class="wrap">
+  <app-input [inputs]="inputs"></app-input>
+</div>
+<!-- feedback -->
+<div class="wrap">
+  <app-feedback [feedbackInfo]="feedback"></app-feedback>
+</div>
+<!-- homework-status -->
+<div class="wrap">
+  <app-homework-status [homeworkStatus]="homeworkStatus"></app-homework-status>
+  <app-homework-status [homeworkStatus]="homeWorkStatusFalse"></app-homework-status>
+</div>
+<!-- notification -->
+<div class="wrap">
+  <app-notification [notification]="notification"></app-notification>
+</div>
+<!-- card -->
+

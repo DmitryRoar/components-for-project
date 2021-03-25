@@ -1,1 +1,10 @@
+.wrap {
+  width: 30%;
+  & > * {
+    margin: 5px 5px;
+  }
+}
 
+.flex {
+  display: flex;
+}

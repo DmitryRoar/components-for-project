@@ -1,0 +1,54 @@
+@import "src/assets/styles/var";
+
+.wrap {
+  position: relative;
+  overflow: hidden;
+  background: #fff;
+  border-radius: 30px;
+  box-shadow: -13px 47px 79px rgba(65, 98, 169, 0.04);
+
+  button {
+    border-radius: 0 0 30px 30px;
+    font-weight: 700;
+  }
+}
+
+.container {
+  flex-direction: column;
+  .headline {
+    font-weight: 700;
+    font-size: 20px;
+  }
+
+  .text {
+    margin: 10px 0 15px 0;
+    font-size: 16px;
+  }
+}
+
+.date {
+  display: inline-flex;
+  justify-content: flex-end;
+  align-items: center;
+  color: $gray-color;
+
+  .mat-icon {
+    background: $blue-gradient;
+    font-size: 12px;
+    width: 12px;
+    height: 12px;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-right: 4px;
+  }
+}
+
+.bell {
+  background: $blue-gradient;
+  border-radius: 50px;
+  display: inline-block;
+  padding: 20px;
+  position: absolute;
+  left: -10px;
+  top: -10px;
+}

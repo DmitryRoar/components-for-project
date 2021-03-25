@@ -1,7 +1,7 @@
 <div class="backdrop" (click)="onClose()"></div>
 
 <div class="wrap">
-  <div class="header-container container">
+  <div class="header-container container-right">
     <div class="header">
       <div class="header-content">
         <h3>{{teacher.firstName}}</h3>
@@ -13,7 +13,7 @@
     </div>
   </div>
 
-  <div class="list-container container">
+  <div class="list-container container-right">
     <nav class="list">
       <ul>
         <li *ngFor="let list of lists">
@@ -28,7 +28,7 @@
     </nav>
   </div>
 
-  <div class="container-footer container">
+  <div class="container-footer container-right">
     <div class="footer-img">
       <img src="assets/img/drawer/email.png" alt="">
     </div>
@@ -43,7 +43,7 @@
     </div>
   </div>
 
-  <div class="sub-footer__container container">
+  <div class="sub-footer__container container-right">
     <div class="sub-footer">
       <button>Logout</button>
       <img src="../../../../assets/img/drawer/logout.svg" alt="logout">
