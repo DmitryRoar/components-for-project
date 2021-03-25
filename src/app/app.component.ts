@@ -8,6 +8,7 @@ import {IInput} from './shared/interfaces/input.interface';
 import {IHomeWorkStatus} from './shared/interfaces/homework-status.interface';
 import {INotificationInfo} from './shared/interfaces/notification.interface';
 import {IConfirm} from './shared/interfaces/confirm.interface';
+import {IModal} from './shared/interfaces/modal.interface';
 
 @Component({
   selector: 'app-root',
@@ -68,6 +69,24 @@ export class AppComponent {
   confirm: IConfirm = {
     title: 'You want to remove 25-29 November from holiday',
     desc: 'You holiday time will be delete'
+  };
+  // modal
+  modalSuccess: IModal = {
+    img: 'assets/img/modal/modal-img.svg',
+    state: 'assets/img/success.svg',
+    text: 'TEXT OF SUCCESS MODAL',
+    success: true
+  };
+  modalDanger: IModal = {
+    img: 'assets/img/modal/modal-img.svg',
+    state: 'assets/img/danger.svg',
+    text: 'TEXT OF DANGER MODAL',
+    success: false
+  };
+  modalWOImg: IModal = {
+    state: 'assets/img/danger.svg',
+    text: 'TEXT OF DANGER MODAL',
+    success: false
   };
 
   constructor(

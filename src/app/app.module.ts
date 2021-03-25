@@ -20,6 +20,7 @@ import {FeedbackComponent} from './shared/components/feedback/feedback.component
 import { HomeworkStatusComponent } from './shared/components/homework-status/homework-status.component';
 import { NotificationComponent } from './shared/components/notification/notification.component';
 import { ConfirmComponent } from './shared/components/confirm/confirm.component';
+import { ModalComponent } from './shared/components/modal/modal.component';
 
 @NgModule({
   declarations: [
@@ -31,7 +32,8 @@ import { ConfirmComponent } from './shared/components/confirm/confirm.component'
     FeedbackComponent,
     HomeworkStatusComponent,
     NotificationComponent,
-    ConfirmComponent
+    ConfirmComponent,
+    ModalComponent
   ],
   imports: [
     BrowserModule,

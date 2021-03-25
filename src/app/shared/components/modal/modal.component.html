@@ -1,0 +1,22 @@
+<div class="wrap">
+  <div class="img-wrap" *ngIf="modal.img">
+    <div class="status">
+      <img [src]="modal.state">
+    </div>
+    <div class="img">
+      <img [src]="modal.img">
+    </div>
+  </div>
+
+
+  <div class="text">
+    {{modal.text}}
+  </div>
+
+  <button
+    class="button button-confirm"
+    mat-flat-button
+  >
+    Ok
+  </button>
+</div>

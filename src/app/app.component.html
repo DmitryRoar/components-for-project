@@ -82,7 +82,17 @@
 <div class="wrap">
   <app-notification [notification]="notification"></app-notification>
 </div>
-<!-- card -->
+<!-- confirm modal -->
 <div class="wrap">
   <app-confirm [confirm]="confirm"></app-confirm>
+</div>
+<!-- modal -->
+<div class="wrap">
+  <app-modal [modal]="modalSuccess"></app-modal>
+  <app-modal [modal]="modalDanger"></app-modal>
+  <app-modal [modal]="modalWOImg"></app-modal>
+</div>
+<!-- card -->
+<div class="wrap">
+  <app-card [img]="img" [lastLesson]="lastLesson"></app-card>
 </div>
