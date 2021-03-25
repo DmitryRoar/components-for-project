@@ -1,4 +1,5 @@
 import {ChangeDetectionStrategy, Component, Input, OnInit} from '@angular/core';
+
 import {IFeedback} from '../../interfaces/feedback.interface';
 
 @Component({

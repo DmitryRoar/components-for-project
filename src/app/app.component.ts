@@ -7,6 +7,7 @@ import {MenuList, TeacherInfo} from './shared/interfaces/drawer.interface';
 import {IInput} from './shared/interfaces/input.interface';
 import {IHomeWorkStatus} from './shared/interfaces/homework-status.interface';
 import {INotificationInfo} from './shared/interfaces/notification.interface';
+import {IConfirm} from './shared/interfaces/confirm.interface';
 
 @Component({
   selector: 'app-root',
@@ -62,6 +63,11 @@ export class AppComponent {
   notification: INotificationInfo = {
     text: 'Notification Info Text',
     date: '12.07.20'
+  };
+  // confirm
+  confirm: IConfirm = {
+    title: 'You want to remove 25-29 November from holiday',
+    desc: 'You holiday time will be delete'
   };
 
   constructor(

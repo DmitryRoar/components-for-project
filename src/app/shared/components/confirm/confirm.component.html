@@ -1,1 +1,39 @@
-<p>confirm works!</p>
+<div class="wrap">
+  <div class="container">
+    <div class="headline">
+      <h2>{{confirm.title}}</h2>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="desc">
+      <p>{{confirm.desc}}</p>
+    </div>
+  </div>
+
+  <div class="choice">
+    <div class="text">
+      <p>Are you sure?</p>
+    </div>
+
+    <div class="button-wrap">
+      <button
+        class="button button-confirm"
+        mat-flat-button
+      >
+        Yes
+      </button>
+    </div>
+
+
+  </div>
+
+  <div class="button-cancel">
+    <button
+      class="button button-default"
+      mat-flat-button
+    >
+      No
+    </button>
+  </div>
+</div>

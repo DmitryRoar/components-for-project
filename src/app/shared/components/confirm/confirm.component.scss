@@ -1,0 +1,68 @@
+@import "src/assets/styles/var";
+
+.wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #fff;
+  border-radius: $border-radius;
+  white-space: normal;
+  padding: 21px 0 5px 0;
+  word-break: break-all;
+}
+
+.container {
+  padding: 0 12px 0 12px;
+  text-align: center;
+}
+
+.headline {
+  font-size: 25px;
+  font-weight: 700;
+}
+
+.desc {
+  margin: 13px 0 19px 0;
+  font-size: 18px;
+  color: #343A40;
+}
+
+.choice {
+  padding: 15px 0;
+  width: 100%;
+  border-top: 1px solid #EFEFEF;
+  border-bottom: 1px solid #EFEFEF;
+  text-align: center;
+  position: relative;
+
+  p {
+    font-size: 18px;
+    font-weight: 700;
+  }
+}
+
+.button-wrap {
+  margin: 19px 0 17px 0;
+
+  button {
+    width: auto;
+    padding: 3px 110px;
+    border-radius: $border-radius;
+  }
+}
+
+.button-cancel {
+  position: relative;
+  text-align: center;
+  top: -22px;
+  width: 62%;
+  margin: 0 auto;
+  background: #fff;
+
+  button {
+    box-shadow: 5px 5px 30px rgba(65, 98, 169, 0.2);
+    border-radius: $border-radius;
+    padding: 4px 48px;
+    width: auto;
+  }
+}

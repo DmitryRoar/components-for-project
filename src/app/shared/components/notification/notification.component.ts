@@ -1,4 +1,5 @@
 import {ChangeDetectionStrategy, Component, Input, OnInit} from '@angular/core';
+
 import {INotificationInfo} from '../../interfaces/notification.interface';
 
 @Component({
