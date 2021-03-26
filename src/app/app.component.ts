@@ -22,7 +22,6 @@ export class AppComponent {
   // card
   card: ICardInfo = {
     img: 'assets/img/card/student-photo.png',
-    lastLesson: '54:00',
     color: 'blue',
     subject: 'english',
     name: 'Garry Roar',
