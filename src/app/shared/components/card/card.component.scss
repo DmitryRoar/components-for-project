@@ -2,7 +2,6 @@
 
 .wrap {
   width: 345px;
-  height: 174px;
   border-radius: $border-radius;
   background: $card-student-content-background;
   box-shadow: 5px 5px 30px rgba(65, 98, 169, 0.2);
@@ -71,8 +70,13 @@
   &__subject {
     font-size: 14px;
 
-    span {
+    .subject {
+      font-weight: 700;
       text-transform: capitalize;
+
+      &-blue {
+        color: $blue-color;
+      }
     }
   }
 
@@ -85,6 +89,9 @@
 }
 
 .footer {
+  position: relative;
+  top: -9px;
+
   &__text {
     font-size: 12px;
     font-weight: 700;

@@ -18,27 +18,37 @@
           <p>{{card.name}}</p>
         </div>
         <div class="content-desc__subject">
-          Subject: <span [ngStyle]="{color: card.color}">{{card.subject}}</span>
+          Subject:
+          <span
+            class="subject"
+            [ngClass]="{
+              'subject-blue': card.color === 'blue',
+              'subject-red': card.color === 'red'
+            }"
+          >
+          {{card.subject}}
+        </span>
         </div>
+
         <hr>
       </div>
-
       <div class="avatar" *ngIf="card.img">
         <img [src]="card.img" alt="student-img">
       </div>
-    </div>
-  </div>
 
-  <div class="footer">
-    <div class="container container-footer">
-      <div class="footer__text">
-        <p>Next Lesson</p>
-      </div>
-      <div class="date">
-        {{card.nextLesson.date}}
-      </div>
-      <div class="time">
-        {{card.nextLesson.time}}
+    </div>
+
+    <div class="footer">
+      <div class="container container-footer">
+        <div class="footer__text">
+          <p>Next Lesson</p>
+        </div>
+        <div class="date">
+          {{card.nextLesson.date}}
+        </div>
+        <div class="time">
+          {{card.nextLesson.time}}
+        </div>
       </div>
     </div>
   </div>
