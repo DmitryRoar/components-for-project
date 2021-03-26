@@ -43,6 +43,7 @@ body {
 
 .avatar {
   img {
+    object-fit: cover;
     border-radius: 50%;
     width: $card-student-content-img-width;
     height: $card-student-content-img-height;

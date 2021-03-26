@@ -48,18 +48,27 @@
   }
 
   &-content {
-    padding: 14px $card-student-content-padding-horizontal 0 $card-student-content-padding-horizontal;
+    padding: 14px $card-student-content-padding-horizontal 14px $card-student-content-padding-horizontal;
     justify-content: flex-end;
   }
 
   &-footer {
-    padding: 0 $card-student-content-padding-horizontal 21px $card-student-content-padding-horizontal;
     justify-content: space-between;
   }
 }
 
+.wrap-desc {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
 .content-desc {
   text-align: right;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  max-width: 100%;
+  white-space: nowrap;
   margin-right: 22px;
   width: 100%;
 
@@ -89,14 +98,11 @@
 }
 
 .footer {
-  position: relative;
-  top: -9px;
-  width: calc(
-    100% -
-    #{$card-student-content-img-width} -
-    #{$card-student-content-padding-horizontal} -
-    #{$card-student-content-icon-size}
-  );
+  width: 100%;
+  padding-top: 9px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 
   &__text {
     font-size: 12px;

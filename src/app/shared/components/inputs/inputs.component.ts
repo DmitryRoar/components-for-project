@@ -9,7 +9,7 @@ import {IInput} from '../../interfaces/input.interface';
   changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class InputsComponent implements OnInit {
-  @Input() inputs: IInput[];
+  @Input() input: IInput;
 
   constructor() { }
 

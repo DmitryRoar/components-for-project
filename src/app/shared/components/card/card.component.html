@@ -13,45 +13,46 @@
 
   <div class="content">
     <div class="container container-content">
-      <div class="content-desc">
-        <div class="content-desc__name">
-          <p>{{card.name}}</p>
-        </div>
-        <div class="content-desc__subject">
-          Subject:
-          <span
-            class="subject"
-            [ngClass]="{
+      <div class="wrap-desc">
+        <div class="content-desc">
+          <div class="content-desc__name">
+            <p>{{card.name}}</p>
+          </div>
+          <div class="content-desc__subject">
+            Subject:
+            <span
+              class="subject"
+              [ngClass]="{
               'subject-blue': card.color === 'blue',
               'subject-red': card.color === 'red'
             }"
-          >
-          {{card.subject}}
-        </span>
+            >
+            {{card.subject}}
+          </span>
+          </div>
+
+          <hr>
+
+          <div class="footer">
+              <div class="footer__text">
+                <p>Next Lesson</p>
+              </div>
+              <div class="icon date">
+                <mat-icon matDatepickerToggleIcon>calendar_today</mat-icon>
+                {{card.nextLesson.date}}
+              </div>
+              <div class="icon time">
+                <mat-icon matDatepickerToggleIcon>query_builder</mat-icon>
+                {{card.nextLesson.time}}
+              </div>
+            </div>
         </div>
 
-        <hr>
-      </div>
-      <div class="avatar" *ngIf="card.img">
-        <img [src]="card.img" alt="student-img">
+        <div class="avatar" *ngIf="card.img">
+          <img [src]="card.img" alt="student-img">
+        </div>
       </div>
 
-    </div>
-
-    <div class="footer">
-      <div class="container container-footer">
-        <div class="footer__text">
-          <p>Next Lesson</p>
-        </div>
-        <div class="icon date">
-          <mat-icon matDatepickerToggleIcon>calendar_today</mat-icon>
-          {{card.nextLesson.date}}
-        </div>
-        <div class="icon time">
-          <mat-icon matDatepickerToggleIcon>query_builder</mat-icon>
-          {{card.nextLesson.time}}
-        </div>
-      </div>
     </div>
   </div>
 </div>

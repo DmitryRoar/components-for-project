@@ -51,7 +51,7 @@
   h3, p {
     text-overflow: ellipsis;
     overflow: hidden;
-    max-width: calc(#{$drawer-width / 2});
+    max-width: $drawer-width / 2;
   }
 }
 

@@ -10,6 +10,7 @@ import {INotificationInfo} from './shared/interfaces/notification.interface';
 import {IConfirm} from './shared/interfaces/confirm.interface';
 import {IModal} from './shared/interfaces/modal.interface';
 import {ICardInfo} from './shared/interfaces/card.interface';
+import {IFeedback} from './shared/interfaces/feedback.interface';
 
 @Component({
   selector: 'app-root',
@@ -21,6 +22,17 @@ export class AppComponent {
 
   // card
   card: ICardInfo = {
+    img: 'assets/img/card/student-photo.png',
+    lastLesson: '54:00',
+    color: 'blue',
+    subject: 'english',
+    name: 'Garry Roar',
+    nextLesson: {
+      date: '15.09.20',
+      time: '12:10'
+    }
+  };
+  cardWOLastLesson: ICardInfo = {
     img: 'assets/img/card/student-photo.png',
     color: 'blue',
     subject: 'english',
@@ -50,14 +62,14 @@ export class AppComponent {
     value: ''
   };
   // input
-  inputs: IInput[] = [
-    {img: 'assets/img/input/phone.svg', label: 'Number', required: true, htmlId: 'phone'},
-    {img: 'assets/img/input/geolocation.svg', label: 'Address', required: true, htmlId: 'geolocation'},
-    {img: 'assets/img/input/user.svg', label: 'Name and surname', required: false, htmlId: 'user'},
-    {img: 'assets/img/input/email.svg', label: 'Email', required: true, htmlId: 'phone'}
-  ];
+  input: IInput = {
+    img: 'assets/img/input/phone.svg',
+    label: 'Number',
+    required: true,
+    htmlId: 'phone'
+  };
   // feedback
-  feedback = {
+  feedback: IFeedback = {
     emoji: 'assets/img/emoji/great.png',
     text: 'Great Job'
   };
