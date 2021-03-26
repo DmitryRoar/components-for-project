@@ -1,5 +1,7 @@
 import {ChangeDetectionStrategy, Component, Input, OnInit} from '@angular/core';
 
+import {ICardInfo} from '../../interfaces/card.interface';
+
 @Component({
   selector: 'app-card',
   templateUrl: './card.component.html',
@@ -7,8 +9,7 @@ import {ChangeDetectionStrategy, Component, Input, OnInit} from '@angular/core';
   changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class CardComponent implements OnInit {
-  @Input() img: string;
-  @Input() lastLesson: string;
+  @Input() card: ICardInfo;
 
   constructor() {
   }

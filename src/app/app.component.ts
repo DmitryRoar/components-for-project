@@ -9,6 +9,7 @@ import {IHomeWorkStatus} from './shared/interfaces/homework-status.interface';
 import {INotificationInfo} from './shared/interfaces/notification.interface';
 import {IConfirm} from './shared/interfaces/confirm.interface';
 import {IModal} from './shared/interfaces/modal.interface';
+import {ICardInfo} from './shared/interfaces/card.interface';
 
 @Component({
   selector: 'app-root',
@@ -19,8 +20,17 @@ export class AppComponent {
   @ViewChild(DrawerDirective) drawerRef: DrawerDirective;
 
   // card
-  img = 'assets/img/card/student-photo.png';
-  lastLesson = '54:00';
+  card: ICardInfo = {
+    img: 'assets/img/card/student-photo.png',
+    lastLesson: '54:00',
+    color: 'red',
+    subject: 'english',
+    name: 'Garry Roar',
+    nextLesson: {
+      date: '15.09.20',
+      time: '12:10'
+    }
+  };
 
   // drawer
   teacher: TeacherInfo = {

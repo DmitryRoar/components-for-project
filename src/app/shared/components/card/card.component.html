@@ -1,33 +1,45 @@
 <div class="wrap">
-  <div class="card">
-    <div class="header" *ngIf="lastLesson">
-      <div class="container">
-        <div class="header__time">
-          <img src="assets/img/card/clock.svg" alt="">
-          <h2 class="text__headline">{{lastLesson}}</h2>
-        </div>
-        <div class="header__text text__content">
-          Before the lesson
-        </div>
+  <div class="header" *ngIf="card.lastLesson">
+    <div class="container container-header">
+      <div class="header__time">
+        <img src="assets/img/card/clock.svg" alt="">
+        <h2 class="text__headline">{{card.lastLesson}}</h2>
+      </div>
+      <div class="header__text text__content">
+        Before the lesson
       </div>
     </div>
+  </div>
 
-    <div class="content">
-      <div class="content__desc">
-        <div class="content__name">
-          Garry Cloud
+  <div class="content">
+    <div class="container container-content">
+      <div class="content-desc">
+        <div class="content-desc__name">
+          <p>{{card.name}}</p>
         </div>
-        <div class="content__subject">
-          Subject: English
+        <div class="content-desc__subject">
+          Subject: <span [ngStyle]="{color: card.color}">{{card.subject}}</span>
         </div>
+        <hr>
       </div>
-      <div class="avatar" *ngIf="img">
-        <img [src]="img" alt="student-img">
+
+      <div class="avatar" *ngIf="card.img">
+        <img [src]="card.img" alt="student-img">
       </div>
     </div>
+  </div>
 
-    <div class="footer">
-      footer
+  <div class="footer">
+    <div class="container container-footer">
+      <div class="footer__text">
+        <p>Next Lesson</p>
+      </div>
+      <div class="date">
+        {{card.nextLesson.date}}
+      </div>
+      <div class="time">
+        {{card.nextLesson.time}}
+      </div>
     </div>
   </div>
 </div>
