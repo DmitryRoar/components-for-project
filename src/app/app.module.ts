@@ -15,7 +15,7 @@ import {AppComponent} from './app.component';
 import {CardComponent} from './shared/components/card/card.component';
 import {DrawerComponent} from './shared/components/drawer/drawer.component';
 import {MatNativeDateModule} from '@angular/material/core';
-import {InputsComponent} from './shared/components/inputs/inputs.component';
+import {InputComponent} from './shared/components/input/input.component';
 import {FeedbackComponent} from './shared/components/feedback/feedback.component';
 import { HomeworkStatusComponent } from './shared/components/homework-status/homework-status.component';
 import { NotificationComponent } from './shared/components/notification/notification.component';
@@ -28,7 +28,7 @@ import { ModalComponent } from './shared/components/modal/modal.component';
     CardComponent,
     DrawerComponent,
     DrawerDirective,
-    InputsComponent,
+    InputComponent,
     FeedbackComponent,
     HomeworkStatusComponent,
     NotificationComponent,

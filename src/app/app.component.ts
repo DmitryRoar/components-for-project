@@ -65,8 +65,7 @@ export class AppComponent {
   input: IInput = {
     img: 'assets/img/input/phone.svg',
     label: 'Number',
-    required: true,
-    htmlId: 'phone'
+    required: true
   };
   // feedback
   feedback: IFeedback = {

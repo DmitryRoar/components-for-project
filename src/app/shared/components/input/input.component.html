@@ -4,11 +4,11 @@
       {{input.label}} *
     </label>
     <ng-template #inputNotRequired>
-      <label [for]="input.htmlId">{{input.label}} </label>
+      <label for="input">{{input.label}} </label>
     </ng-template>
     <div>
-      <img [src]="input.img" [alt]="input.htmlId">
-      <input [id]="input.htmlId" type="text">
+      <img [src]="input.img" [alt]="input.label">
+      <input id="input" type="text">
     </div>
   </div>
 </div>
