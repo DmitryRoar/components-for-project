@@ -1,6 +1,6 @@
 <div class="wrap" *ngIf="input; else empty">
   <div class="input">
-    <label [for]="input.label" *ngIf="input.required; else inputNotRequired">
+    <label for="input" *ngIf="input.required; else inputNotRequired">
       {{input.label}} *
     </label>
     <ng-template #inputNotRequired>
