@@ -52,14 +52,14 @@
 <button mat-flat-button>without color attribute</button>
 <button mat-flat-button disabled>disabled</button>
 ~~~
-![button](./readme-img/button.png)
+![button](demo/button.png)
 
 ## Checkbox
 ~~~html
 <mat-checkbox color="primary"></mat-checkbox>
 <mat-checkbox color="primary"></mat-checkbox>
 ~~~
-![checkbox](./readme-img/checkbox.png)
+![checkbox](demo/checkbox.png)
 
 ## Select
 ~~~html
@@ -93,17 +93,18 @@ export interface IDot {
   color: string;
 }
 ~~~
-![dot](./readme-img/dot.png)
+![dot](demo/dot.png)
 
 ## Datepicker
 ~~~html
 <app-datepicker></app-datepicker>
 ~~~
-![datepicker](./readme-img/datepicker.png)
+![datepicker](demo/datepicker.png)
 
 ## Input
 ~~~html
 <app-input [input]="input"></app-input>
+<app-input [input]="inputNotRequired"></app-input>
 ~~~
 ~~~ts
 export interface IInput {
@@ -112,6 +113,7 @@ export interface IInput {
   required: boolean;
 }
 ~~~
+![](./demo/input.png)
 
 ## Feedback
 ~~~html
@@ -123,7 +125,7 @@ export interface IFeedback {
   text: string;
 }
 ~~~
-![feedback](./readme-img/feedback.png)
+![feedback](demo/feedback.png)
 
 ## Homework-status
 ~~~html
@@ -136,7 +138,7 @@ export interface IHomeWorkStatus {
   date?: string;
 }
 ~~~
-![homework-status](./readme-img/homework-status.png)
+![homework-status](demo/homework-status.png)
 
 ## Notification
 ~~~html
@@ -148,7 +150,7 @@ export interface INotificationInfo {
   date: string;
 }
 ~~~
-![notification](./readme-img/notification.png)
+![notification](demo/notification.png)
 
 ## Confirm
 ~~~html
@@ -160,7 +162,7 @@ export interface IConfirm {
   desc: string;
 }
 ~~~
-![confirm](./readme-img/confirm.png)
+![confirm](demo/confirm.png)
 
 ## Modal
 ~~~html
@@ -176,7 +178,7 @@ export interface IModal {
   success?: boolean;
 }
 ~~~
-![modal](./readme-img/modal.png)
+![modal](demo/modal.png)
 
 ## Card
 ~~~html
@@ -198,7 +200,7 @@ export interface ICardInfo {
   nextLesson: NextLesson;
 }
 ~~~
-![confirm](./readme-img/modal.png)
+![confirm](demo/card.png)
 
 ## Drawer
 ~~~html
@@ -223,4 +225,4 @@ export interface MenuList {
   title: string;
 }
 ~~~
-![drawer](./readme-img/drawer.png)
+![drawer](demo/drawer.png)

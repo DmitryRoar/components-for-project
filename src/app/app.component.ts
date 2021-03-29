@@ -72,6 +72,11 @@ export class AppComponent {
     label: 'Number',
     required: true
   };
+  inputNotRequired: IInput = {
+    img: 'assets/img/input/phone.svg',
+    label: 'Address',
+    required: false
+  };
   // feedback
   feedback: IFeedback = {
     emoji: 'assets/img/emoji/great.png',
