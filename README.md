@@ -199,3 +199,28 @@ export interface ICardInfo {
 }
 ~~~
 ![confirm](./readme-img/modal.png)
+
+## Drawer
+~~~html
+<button
+  (click)="createDrawer()"
+  mat-flat-button
+  color="accent"
+>
+  open drawer
+</button>
+<ng-template drawerRef></ng-template>
+~~~
+~~~ts
+export interface TeacherInfo {
+  firstName: string;
+  lastName: string;
+  img: string;
+}
+
+export interface MenuList {
+  path: string;
+  title: string;
+}
+~~~
+![drawer](./readme-img/drawer.png)
