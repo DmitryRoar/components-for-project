@@ -1,5 +1,7 @@
 import {ChangeDetectionStrategy, Component, Input, OnInit} from '@angular/core';
 
+import {IHomeWorkStatus} from '../../interfaces/homework-status.interface';
+
 @Component({
   selector: 'app-homework-status',
   templateUrl: './homework-status.component.html',
@@ -7,7 +9,7 @@ import {ChangeDetectionStrategy, Component, Input, OnInit} from '@angular/core';
   changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class HomeworkStatusComponent implements OnInit {
-  @Input('homeworkStatus') status: any;
+  @Input('homeworkStatus') status: IHomeWorkStatus;
 
   constructor() {
   }
