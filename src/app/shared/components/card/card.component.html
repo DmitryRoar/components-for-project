@@ -1,4 +1,4 @@
-<div class="wrap">
+<div class="wrap" *ngIf="card; else empty">
   <div class="header" *ngIf="card.lastLesson">
     <div class="container container-header">
       <div class="header__time">
@@ -65,3 +65,7 @@
     </div>
   </div>
 </div>
+
+<ng-template #empty>
+  <p>empty card</p>
+</ng-template>

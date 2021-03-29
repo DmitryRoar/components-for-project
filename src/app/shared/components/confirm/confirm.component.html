@@ -1,4 +1,4 @@
-<div class="wrap">
+<div class="wrap" *ngIf="confirm; else empty">
   <div class="container">
     <div class="headline">
       <h2>{{confirm.title}}</h2>
@@ -36,3 +36,7 @@
     </button>
   </div>
 </div>
+
+<ng-template #empty>
+  <p>empty confirm</p>
+</ng-template>

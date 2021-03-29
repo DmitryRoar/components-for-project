@@ -1,4 +1,4 @@
-<div class="wrap">
+<div class="wrap" *ngIf="modal; else empty">
   <div class="img-wrap" *ngIf="modal.img">
     <div class="status">
       <img [src]="modal.state">
@@ -20,3 +20,7 @@
     Ok
   </button>
 </div>
+
+<ng-template #empty>
+  <p>empty modal info</p>
+</ng-template>

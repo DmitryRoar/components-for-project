@@ -1,6 +1,6 @@
 <div class="backdrop" (click)="onClose()"></div>
 
-<div class="wrap">
+<div class="wrap" *ngIf="teacher; else empty">
   <div class="header-container container-right">
     <div class="header">
       <div class="header-content">
@@ -50,3 +50,7 @@
     </div>
   </div>
 </div>
+
+<ng-template #empty>
+  <p>empty teacher info</p>
+</ng-template>
