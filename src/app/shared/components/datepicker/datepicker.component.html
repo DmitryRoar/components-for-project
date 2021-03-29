@@ -1,0 +1,10 @@
+<div class="input">
+  <mat-label>Data Picker</mat-label>
+  <div>
+    <input matInput [matDatepicker]="picker" readonly>
+    <mat-datepicker-toggle matSuffix [for]="picker">
+      <mat-icon matDatepickerToggleIcon>calendar_today</mat-icon>
+    </mat-datepicker-toggle>
+    <mat-datepicker #picker></mat-datepicker>
+  </div>
+</div>

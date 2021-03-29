@@ -10,6 +10,7 @@ import {MatDatepickerModule} from '@angular/material/datepicker';
 import {MatIconModule} from '@angular/material/icon';
 
 import {DrawerDirective} from './shared/directives/drawer.directive';
+import {DotDirective} from './shared/directives/dot.directive';
 
 import {AppComponent} from './app.component';
 import {CardComponent} from './shared/components/card/card.component';
@@ -21,6 +22,8 @@ import {HomeworkStatusComponent} from './shared/components/homework-status/homew
 import {NotificationComponent} from './shared/components/notification/notification.component';
 import {ConfirmComponent} from './shared/components/confirm/confirm.component';
 import {ModalComponent} from './shared/components/modal/modal.component';
+import {SelectComponent} from './shared/components/select/select.component';
+import {DatepickerComponent} from './shared/components/datepicker/datepicker.component';
 
 @NgModule({
   declarations: [
@@ -33,7 +36,10 @@ import {ModalComponent} from './shared/components/modal/modal.component';
     HomeworkStatusComponent,
     NotificationComponent,
     ConfirmComponent,
-    ModalComponent
+    ModalComponent,
+    SelectComponent,
+    DotDirective,
+    DatepickerComponent
   ],
   imports: [
     BrowserModule,

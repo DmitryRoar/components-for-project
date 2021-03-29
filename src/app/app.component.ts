@@ -11,6 +11,7 @@ import {IConfirm} from './shared/interfaces/confirm.interface';
 import {IModal} from './shared/interfaces/modal.interface';
 import {ICardInfo} from './shared/interfaces/card.interface';
 import {IFeedback} from './shared/interfaces/feedback.interface';
+import {ISelect} from './shared/interfaces/select.interface';
 
 @Component({
   selector: 'app-root',
@@ -58,8 +59,12 @@ export class AppComponent {
     {path: 'contact', title: 'Contact us'}
   ];
   // select
-  select = {
-    value: ''
+  select: ISelect = {
+    title: 'hello label!',
+    options: [
+      {value: 'foo'},
+      {value: 'bar'},
+    ]
   };
   // input
   input: IInput = {

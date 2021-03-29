@@ -72,30 +72,6 @@ mat-checkbox .mat-checkbox-inner-container {
   width: 20px;
   height: 20px;
   border-radius: 50%;
-
-  &-pink {
-    background: #D53B64;
-  }
-
-  &-orange {
-    background: #F09D37;
-  }
-
-  &-green {
-    background: $green-color;
-  }
-
-  &-blue {
-    background: #4252AF;
-  }
-
-  &-gradient {
-    background: linear-gradient(90deg, #2C83DA 0%, #4AB7F8 100%);
-  }
-
-  &-purple {
-    background: #8F36AA;
-  }
 }
 
 .input {
