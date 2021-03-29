@@ -85,7 +85,7 @@
       text-transform: capitalize;
 
       &-blue {
-        color: $blue-color;
+        color: $accent-color;
       }
     }
   }
@@ -132,11 +132,21 @@
 .dialog {
   position: absolute;
   right: 0;
-  bottom: -7px;
+  bottom: -4px;
 
-  button {
+  .mat-button {
     background: $inactive-color;
-    padding: 11px;
+    padding: 12px 11px;
+    min-height: 42px;
+    min-width: 42px;
+    height: 42px;
+    width: 42px;
     border-radius: 50px;
+    display: flex;
+    align-items: center;
+
+    img {
+      width: 100%;
+    }
   }
 }

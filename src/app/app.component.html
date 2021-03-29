@@ -1,9 +1,9 @@
 <!-- drawer -->
 <div class="wrap">
   <button
-    class="button button-default"
     (click)="createDrawer()"
     mat-flat-button
+    color="accent"
   >
     open drawer
   </button>
@@ -11,23 +11,19 @@
 </div>
 <!-- button -->
 <div class="wrap">
-  <button
-    class="button button-confirm"
-    mat-flat-button
-  >
-    confirm button
-  </button>
-  <button
-    class="button button-default"
-    mat-flat-button="primary"
-  >
-    default button
-  </button>
+  <button mat-flat-button color="primary">primary</button>
+  <button mat-flat-button color="warn">warn</button>
+  <button mat-flat-button color="accent">accent</button>
+
+
+  <button mat-flat-button>without color attribute</button>
+  <button mat-flat-button color="test">test</button>
+  <button mat-flat-button disabled>disabled</button>
 </div>
 <!-- checkbox -->
 <div class="wrap">
-  <mat-checkbox></mat-checkbox>
-  <mat-checkbox></mat-checkbox>
+  <mat-checkbox color="primary"></mat-checkbox>
+  <mat-checkbox color="primary"></mat-checkbox>
 </div>
 <!-- select -->
 <div class="wrap">

@@ -1,13 +1,14 @@
 @import '~@angular/material/theming';
 @include mat-core();
-$components-for-project-primary: mat-palette($mat-indigo);
-$components-for-project-accent: mat-palette($mat-pink, A200, A100, A400);
+
+$components-for-project-primary: mat-palette($mat-primary);
+$components-for-project-accent: mat-palette($mat-blue);
 $components-for-project-warn: mat-palette($mat-red);
 $components-for-project-theme: mat-light-theme((
   color: (
     primary: $components-for-project-primary,
     accent: $components-for-project-accent,
-    warn: $components-for-project-warn,
+    warn: $components-for-project-warn
   )
 ));
 
@@ -50,36 +51,17 @@ body {
   }
 }
 
-.button {
+.mat-flat-button, .mat-button-disabled, .mat-button {
   z-index: 1;
-  color: #fff;
   display: flex;
   justify-content: center;
   width: 100%;
   font-size: 20px;
-
-  &-default {
-    background: #fff;
-    color: #000;
-  }
-
-  &-confirm {
-    background: $orange-color;
-  }
-}
-
-.mat-checkbox-checked.mat-accent .mat-checkbox-ripple .mat-ripple-element {
-  opacity: 0.03;
-  background-color: $orange-color;
 }
 
 mat-checkbox .mat-checkbox-inner-container {
   width: $checkbox-width;
   height: $checkbox-height;
-}
-
-.mat-checkbox-checked.mat-accent .mat-checkbox-background,.mat-checkbox-indeterminate.mat-accent .mat-checkbox-background {
-  background-color: $orange-color;
 }
 
 .mat-checkbox .mat-checkbox-frame {

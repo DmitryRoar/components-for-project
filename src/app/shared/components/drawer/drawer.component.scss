@@ -72,7 +72,7 @@
         font-weight: 700;
 
         &.active {
-          color: $drawer-blue-color;
+          color: $accent-color;
         }
       }
     }
@@ -93,7 +93,7 @@
 
   ul {
     li {
-      color: $drawer-blue-color;
+      color: $accent-color;
       margin: $drawer-footer-li-margin;
       text-decoration: underline;
       font-weight: 700;
