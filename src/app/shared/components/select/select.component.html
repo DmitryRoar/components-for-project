@@ -1,4 +1,4 @@
-<mat-form-field>
+<mat-form-field *ngIf="select">
   <mat-label>{{select.title}}</mat-label>
   <mat-select>
     <mat-option [value]="option.value" *ngFor="let option of select.options">
