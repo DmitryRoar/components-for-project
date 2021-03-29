@@ -1,4 +1,15 @@
 ### ComponentsForProject
+<h3>global classes: </h3>
+<ul>
+    <li>.text__content - обычный размер текста</li>
+    <li>.text__headline - размерз текста для загаловков</li>
+    <li>.input - класс, для стилизации инпута</li>
+    <li>.dot - разноцветные точки</li>
+    <li>container-right - горизонтальный flex блок, который позиционирует текст по правой стороне </li>
+    <li>.avatar - класс, для стилизации картинки с длиной и шириной 85px</li>
+    <li>.card-blue - класс, для стилизации component’a с синим background’ом (homework-status component; feedback component)</li>
+</ul>
+
 <h3>global: </h3>
 <ul>
     <li>$inactive-color: #DDE2E7</li>
@@ -19,17 +30,6 @@
     <li>$drawer-hr-color: цвет обводки</li>
 </ul>
 
-<h3>global classes: </h3>
-<ul>
-    <li>.text__content - обычный размер текста</li>
-    <li>.text__headline - размерз текста для загаловков</li>
-    <li>.input - класс, для стилизации инпута</li>
-    <li>.dot - разноцветные точки</li>
-    <li>container-right - горизонтальный flex блок, который позиционирует текст по правой стороне </li>
-    <li>.avatar - класс, для стилизации картинки с длиной и шириной 85px</li>
-    <li>.card-blue - класс, для стилизации component’a с синим background’ом (homework-status component; feedback component)</li>
-</ul>
-
 <h3>card-student:</h3>
 <ul>
     <li>$card-student-border-radius:  border-radius всей карточки</li>
@@ -47,7 +47,6 @@
 <button mat-flat-button color="primary">primary</button>
 <button mat-flat-button color="warn">warn</button>
 <button mat-flat-button color="accent">accent</button>
-
 
 <button mat-flat-button>without color attribute</button>
 <button mat-flat-button disabled>disabled</button>
@@ -75,6 +74,7 @@ export interface ISelect {
   options: ISelectOptions[];
 }
 ~~~
+![select](./demo/select.png)
 
 ## Dot
 ~~~html
@@ -113,7 +113,7 @@ export interface IInput {
   required: boolean;
 }
 ~~~
-![](./demo/input.png)
+![input](./demo/input.png)
 
 ## Feedback
 ~~~html
