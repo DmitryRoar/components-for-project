@@ -1,9 +1,11 @@
 @import '~@angular/material/theming';
+@import "assets/styles/index";
+@import "assets/styles/fonts";
 @include mat-core();
 
 $components-for-project-primary: mat-palette($mat-primary);
-$components-for-project-accent: mat-palette($mat-blue);
-$components-for-project-warn: mat-palette($mat-red);
+$components-for-project-accent: mat-palette($mat-accent);
+$components-for-project-warn: mat-palette($mat-warn);
 $components-for-project-theme: mat-light-theme((
   color: (
     primary: $components-for-project-primary,
@@ -14,8 +16,6 @@ $components-for-project-theme: mat-light-theme((
 
 @include angular-material-theme($components-for-project-theme);
 
-@import "assets/styles/index";
-@import "assets/styles/fonts";
 
 * {
   font-family: 'Rubik', sans-serif;
