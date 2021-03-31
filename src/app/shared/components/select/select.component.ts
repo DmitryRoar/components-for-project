@@ -1,4 +1,5 @@
 import {ChangeDetectionStrategy, Component, Input, OnInit} from '@angular/core';
+import {FormControl} from '@angular/forms';
 
 import {ISelect} from '../../interfaces/select.interface';
 
@@ -10,6 +11,8 @@ import {ISelect} from '../../interfaces/select.interface';
 })
 export class SelectComponent implements OnInit {
   @Input() select: ISelect;
+
+  control = new FormControl()
 
   constructor() { }
 

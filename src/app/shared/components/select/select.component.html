@@ -1,7 +1,7 @@
-<mat-form-field *ngIf="select">
+<mat-form-field appearance="fill">
   <mat-label>{{select.title}}</mat-label>
-  <mat-select>
-    <mat-option [value]="option.value" *ngFor="let option of select.options">
+  <mat-select [formControl]="control" multiple>
+    <mat-option *ngFor="let option of select.options" [value]="option.value">
       {{option.value}}
     </mat-option>
   </mat-select>
