@@ -1,3 +1,6 @@
+@import '~@angular/material/theming';
+@include mat-core();
+
 // palette
 $dark-primary-text: rgba(black, 0.87);
 $light-primary-text: white;
@@ -72,13 +75,38 @@ $mat-warn: (
   )
 );
 
+$components-for-project-primary: mat-palette($mat-primary);
+$components-for-project-accent: mat-palette($mat-accent);
+$components-for-project-warn: mat-palette($mat-warn);
+$components-for-project-theme: mat-light-theme((
+  color: (
+    primary: $components-for-project-primary,
+    accent: $components-for-project-accent,
+    warn: $components-for-project-warn
+  )
+));
+
+@include angular-material-theme($components-for-project-theme);
+
 // global
-$accent-color: #061283;
+$primary-color: mat-color($components-for-project-primary);
+$accent-color: mat-color($components-for-project-accent);
+$warn-color: mat-color($components-for-project-warn);
 $inactive-color: #DDE2E7;
 $gray-color: #c2c2c2;
 $green-color: #67AC5B;
 $blue-gradient: linear-gradient(90deg, #2C83DA 0%, #4AB7F8 100%);
 $border-radius: 30px;
+
+$main-img-height: 215px;
+$main-img-width: 215px;
+$menu-img-height: 85px;
+$menu-img-width: 85px;
+
+$input-padding: 15px 18px;
+
+// button
+$button-size: 20px;
 
 // checkbox
 $checkbox-height: 25px;
@@ -88,8 +116,6 @@ $checkbox-width: 25px;
 $card-student-content-header-height: 46px;
 
 $card-student-content-background: #fff;
-$card-student-content-img-height: 85px;
-$card-student-content-img-width: 85px;
 $card-student-content-padding-horizontal: 14px;
 $card-student-content-icon-size: 8px;
 
@@ -101,3 +127,8 @@ $drawer-padding: 14px;
 $drawer-list-margin-bottom: 27px;
 
 $drawer-footer-li-margin: 15px;
+
+// dot
+$dot-height: 20px;
+$dot-width: 20px;
+$dot-border-radius: 50%;

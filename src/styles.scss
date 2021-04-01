@@ -1,21 +1,5 @@
-@import '~@angular/material/theming';
 @import "assets/styles/index";
 @import "assets/styles/fonts";
-@include mat-core();
-
-$components-for-project-primary: mat-palette($mat-primary);
-$components-for-project-accent: mat-palette($mat-accent);
-$components-for-project-warn: mat-palette($mat-warn);
-$components-for-project-theme: mat-light-theme((
-  color: (
-    primary: $components-for-project-primary,
-    accent: $components-for-project-accent,
-    warn: $components-for-project-warn
-  )
-));
-
-@include angular-material-theme($components-for-project-theme);
-
 
 * {
   font-family: 'Rubik', sans-serif;
@@ -32,32 +16,50 @@ body {
   text-align: right;
 }
 
-.text__headline {
+.text-headline {
   font-size: 22px;
   font-weight: 700;
   text-transform: uppercase;
 }
 
-.text__content {
+.text-content {
   font-size: 15px;
 }
 
 .avatar {
-  img {
-    object-fit: cover;
-    border-radius: 50%;
-    width: $card-student-content-img-width;
-    height: $card-student-content-img-height;
+  &-menu {
+    img {
+      object-fit: cover;
+      border-radius: 50%;
+      width: $menu-img-width;
+      height: $menu-img-height;
+    }
+  }
+
+  &-main {
+    img {
+      object-fit: cover;
+      border-radius: 50%;
+      width: $main-img-width;
+      height: $main-img-height;
+    }
   }
 }
+mat-form-field {
+  display: block;
 
-.mat-form-field {
-  &-flex {
-    background: #fff !important;
-    border-radius: $border-radius !important;
-  }
-  &-underline {
-    display: none;
+  .mat-form-field {
+    &-flex {
+      background: #fff !important;
+      border-radius: $border-radius !important;
+      padding: $input-padding !important;
+    }
+    &-underline {
+      display: none;
+    }
+
+    &-infix {
+    }
   }
 }
 
@@ -66,7 +68,7 @@ body {
   display: flex;
   justify-content: center;
   width: 100%;
-  font-size: 20px;
+  font-size: $button-size;
 }
 
 mat-checkbox .mat-checkbox-inner-container {
@@ -79,9 +81,9 @@ mat-checkbox .mat-checkbox-inner-container {
 }
 
 .dot {
-  width: 20px;
-  height: 20px;
-  border-radius: 50%;
+  width: $dot-width;
+  height: $dot-height;
+  border-radius: $dot-border-radius;
 }
 
 .input {
@@ -98,7 +100,7 @@ mat-checkbox .mat-checkbox-inner-container {
   }
 
   input {
-    padding: 15px 18px;
+    padding: $input-padding;
     font-size: 18px;
     color: #B1BAC9;
     background: none;
