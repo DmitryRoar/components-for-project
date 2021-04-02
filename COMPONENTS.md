@@ -9,7 +9,8 @@
 <gen-textarea></gen-textarea>
 ```
 ### Компонент
-@Input() textarea: TextArea
+* @Input() textarea: TextArea
+* @Output() value = new EventEmitter<any>()
 ### Переменные
 ////
 
