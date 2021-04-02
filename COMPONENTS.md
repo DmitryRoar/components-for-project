@@ -95,10 +95,6 @@ import {MatSelectModule} from '@angular/material/select';
 ### Реализация
 Для работоспособности компонента, необходимо в тег **div** записать attribute:
 * color (primary, warn, pink, gradient, accent, green)
-```ts
-import {MatButtonModule} from '@angular/material/button';
-```
-
 ### Screenshot
 ![dot](./demo/dot.png)
 
