@@ -2,10 +2,249 @@
 содержать в себе enum **changeDetection**, 
 со значением **ChangeDetectionStrategy.OnPush**
 
+## Checkbox
+### Выполняет: Dmitry
+### Тэг: 
+```html
+<mat-checkbox></mat-checkbox>
+```
+### Директивы
+* color
+
+### Реализация
+Angular Material Checkbox, для реализации необходим import
+```ts
+import {MatCheckboxModule} from '@angular/material/checkbox';
+```
+
+## Button
+### Выполняет: Dmitry
+### Тэг: 
+```html
+<button></button>
+```
+### Директивы
+* mat-button
+* mat-flat-button
+* mat-raised-button
+* mat-stroked-button
+* color
+
+### Реализация
+Angular Material Button, для реализации необходим import
+```ts
+import {MatButtonModule} from '@angular/material/button';
+```
+Для сменя цветовой палитры необходимо 
+перейти в файл assets/styles/_var.scss
+* $mat-primary - оранжевый цвет
+* $mat-accent - синий цвет
+* $mat-warn - красный цвет
+* не передавая атрибут color - белый цвет
+
+$button-size - font-size кнопки
+
+### Screenshot
+![button](./demo/button.png)
+
+## Checkbox
+### Выполняет: Dmitry
+### Тэг: 
+```html
+<mat-checkbox></mat-checkbox>
+```
+### Директивы
+* color
+
+### Переменные
+* $checkbox-height: высота checkbox'a;
+* $checkbox-width: ширина checkbox'a;
+
+### Реализация
+Angular Material Checkbox, для реализации необходим import
+```ts
+import {MatCheckboxModule} from '@angular/material/checkbox';
+```
+
+### Screenshot
+![button](./demo/checkbox.png)
+
+## Select
+### Выполняет: Alexander
+### Тэг: 
+```html
+<gen-select></gen-select>
+```
+### Компонент
+* @Input() select: Select
+### Реализация
+Для реализации 
+необходимо передавать в
+атрибут **[select]** объект с интерфейосм:
+```ts
+interface SelectOptions {
+  value: string;
+}
+
+export interface Select {
+  title: string;
+  options: SelectOptions[];
+}
+```
+сделать import, т.к. компонент angular material
+```ts
+import {MatSelectModule} from '@angular/material/select';
+```
+
+### Screenshot
+![button](./demo/select.png)
+
+## Dot
+### Тэг: 
+```html
+<div></div>
+```
+### Директивы
+* appDot
+* color
+
+### Переменные
+* $dot-height: высота dot
+* $dot-width: ширина dot
+* $dot-border-radius: border-radius dot
+
+### Реализация
+Для работоспособности компонента, необходимо в тег **div** записать два attributes:
+* appDot
+* color (primary, warn, pink, gradient, accent, green)
+```ts
+import {MatButtonModule} from '@angular/material/button';
+```
+
+### Screenshot
+![dot](./demo/dot.png)
+
+## Datepicker
+### Выполняет: Dmitry
+### Тэг: 
+```html
+<gen-datepicker></gen-datepicker>
+```
+
+### Реализация
+Для работоспособности компонента необходимо сделать импорт модуля
+```ts
+import {MatButtonModule} from '@angular/material/button';
+```
+
+![datepicker](./demo/datepicker.png)
+
+## Input
+### Выполняет: Dmitry
+### Тэг: 
+```html
+<gen-input></gen-input>
+```
+### Компонент
+* @Input() input: Input
+### Реализация
+Для реализации 
+необходимо передавать в
+атрибут **[select]** объект с интерфейосм:
+```ts
+export interface Input {
+  img: string;
+  label: string;
+  required: boolean;
+}
+```
+
+### Screenshot
+![input](./demo/input.png)
+
+## StudentFeedback
+### Выполняет: Lado
+### Тэг: 
+```html
+<gen-student-feedback></gen-student-feedback>
+```
+### Компонент
+* @Input() feedback: Feedback
+### Реализация
+Для реализации 
+необходимо передавать в
+атрибут **[feedback]** объект с интерфейосм:
+```ts
+interface FeedbackEmoji {
+  emoji: string;
+  text: string;
+}
+interface HomeWorkStatus {
+  completed: boolean;
+  date?: string;
+}
+
+export interface Feedback {
+  homework: HomeWorkStatus;
+  feedback: FeedbackEmoji;
+}
+```
+
+### Screenshot
+![student-feedback](./demo/student-feedback.png)
+
+## ConfirmModal
+### Выполняет: Dmitry
+### Тэг: 
+```html
+<gen-confirm></gen-confirm>
+```
+### Компонент
+* @Input() confirm: Confirm
+### Реализация
+Для реализации 
+необходимо передавать в
+атрибут **[confirm]** объект с интерфейосм:
+```ts
+export interface Confirm {
+  title: string;
+  desc: string;
+}
+```
+
+### Screenshot
+![confirm-modal](./demo/confirm.png)
+
+## ConfirmModal
+### Выполняет: Dmitry
+### Тэг: 
+```html
+<gen-modal></gen-modal>
+```
+### Компонент
+* @Input() modal: Modal
+### Реализация
+Для реализации 
+необходимо передавать в
+атрибут **[modal]** объект с интерфейосм:
+```ts
+export interface Modal {
+  img?: string;
+  state?: string;
+  text: string;
+  success?: boolean;
+}
+```
+
+### Screenshot
+![modal](./demo/modal.png)
+
+# NOT RELEVANT YET 
+
 ## StarCardComponent (#25 notification from kid)
 ### Тэг: 
 ```html
-<app-star-card></app-star-card>
+<gen-star-card></gen-star-card>
 ```
 ### Компонент
 * @Input() card: IStarCard
@@ -26,7 +265,7 @@ export interface IStarCard {
 ## NotificationSettingComponent (#22 notification setting)
 ### Тэг: 
 ```html
-<app-notification-setting></app-notification-setting>
+<gen-notification-setting></gen-notification-setting>
 ```
 ### Компонент
 * @Input() setting: INotificationSetting
@@ -47,7 +286,7 @@ export interface INotificationSetting {
 ## NotificationListComponent (#23 notification all)
 ### Тэг: 
 ```html
-<app-notification-list></app-notification-list>
+<gen-notification-list></gen-notification-list>
 ```
 ### Компонент
 * @Input() list: INotificationList
@@ -70,7 +309,7 @@ export interface INotificationList {
 ## ScheduleCardComponent (#11 schedule)
 ### Тэг: 
 ```html
-<app-schedule-card></app-schedule-card>
+<gen-schedule-card></gen-schedule-card>
 ```
 ### Компонент
 * @Input() card: IScheduleCard
@@ -93,7 +332,7 @@ export interface IScheduleCard {
 ## LessonCardComponent (#18 lesson card for student...)
 ### Тэг: 
 ```html
-<app-lesson-card></app-lesson-card>
+<gen-lesson-card></gen-lesson-card>
 ```
 ### Компонент
 * @Input() card: ILessonCard
@@ -204,231 +443,3 @@ export interface IChat {
 атрибут **[img]** объект с интерфейосм:
 ### Screenshot
 ![payment-card](./demo/payment-card.png)
-
-## Checkbox
-### Тэг: 
-```html
-<mat-checkbox></mat-checkbox>
-```
-### Директивы
-* color
-
-### Реализация
-Angular Material Checkbox, для реализации необходим import
-```ts
-import {MatCheckboxModule} from '@angular/material/checkbox';
-```
-
-## Button
-### Тэг: 
-```html
-<button></button>
-```
-### Директивы
-* mat-button
-* mat-flat-button
-* mat-raised-button
-* mat-stroked-button
-* color
-
-### Реализация
-Angular Material Button, для реализации необходим import
-```ts
-import {MatButtonModule} from '@angular/material/button';
-```
-Для сменя цветовой палитры необходимо 
-перейти в файл assets/styles/_var.scss
-* $mat-primary - оранжевый цвет
-* $mat-accent - синий цвет
-* $mat-warn - красный цвет
-* не передавая атрибут color - белый цвет
-
-$button-size - font-size кнопки
-
-### Screenshot
-![button](./demo/button.png)
-
-## Checkbox
-### Тэг: 
-```html
-<mat-checkbox></mat-checkbox>
-```
-### Директивы
-* color
-
-### Переменные
-* $checkbox-height: высота checkbox'a;
-* $checkbox-width: ширина checkbox'a;
-
-### Реализация
-Angular Material Checkbox, для реализации необходим import
-```ts
-import {MatCheckboxModule} from '@angular/material/checkbox';
-```
-
-### Screenshot
-![button](./demo/checkbox.png)
-
-## Select
-### Тэг: 
-```html
-<app-select></app-select>
-```
-### Компонент
-* @Input() select: ISelect
-### Реализация
-Для реализации 
-необходимо передавать в
-атрибут **[select]** объект с интерфейосм:
-```ts
-interface ISelectOptions {
-  value: string;
-}
-
-export interface ISelect {
-  title: string;
-  options: ISelectOptions[];
-}
-```
-сделать import, т.к. компонент angular material
-```ts
-import {MatSelectModule} from '@angular/material/select';
-```
-
-### Screenshot
-![button](./demo/select.png)
-
-## Dot
-### Тэг: 
-```html
-<div></div>
-```
-### Директивы
-* appDot
-* color
-
-### Переменные
-* $dot-height: высота dot
-* $dot-width: ширина dot
-* $dot-border-radius: border-radius dot
-
-### Реализация
-Для работоспособности компонента, необходимо в тег **div** записать два attributes:
-* appDot
-* color (primary, warn, pink, gradient, accent, green)
-```ts
-import {MatButtonModule} from '@angular/material/button';
-```
-
-### Screenshot
-![dot](./demo/dot.png)
-
-## Datepicker
-### Тэг: 
-```html
-<app-datepicker></app-datepicker>
-```
-
-### Реализация
-Для работоспособности компонента необходимо сделать импорт модуля
-```ts
-import {MatButtonModule} from '@angular/material/button';
-```
-
-![datepicker](./demo/datepicker.png)
-
-## Input
-### Тэг: 
-```html
-<app-input></app-input>
-```
-### Компонент
-* @Input() input: IInput
-### Реализация
-Для реализации 
-необходимо передавать в
-атрибут **[select]** объект с интерфейосм:
-```ts
-export interface IInput {
-  img: string;
-  label: string;
-  required: boolean;
-}
-```
-
-### Screenshot
-![input](./demo/input.png)
-
-## StudentFeedback
-### Тэг: 
-```html
-<app-student-feedback></app-student-feedback>
-```
-### Компонент
-* @Input() feedback: IFeedback
-### Реализация
-Для реализации 
-необходимо передавать в
-атрибут **[feedback]** объект с интерфейосм:
-```ts
-interface IFeedbackEmoji {
-  emoji: string;
-  text: string;
-}
-interface IHomeWorkStatus {
-  completed: boolean;
-  date?: string;
-}
-
-export interface IFeedback {
-  homework: IHomeWorkStatus;
-  feedback: IFeedbackEmoji
-}
-```
-
-### Screenshot
-![student-feedback](./demo/student-feedback.png)
-
-## ConfirmModal
-### Тэг: 
-```html
-<app-confirm></app-confirm>
-```
-### Компонент
-* @Input() confirm: IConfirm
-### Реализация
-Для реализации 
-необходимо передавать в
-атрибут **[confirm]** объект с интерфейосм:
-```ts
-export interface IConfirm {
-  title: string;
-  desc: string;
-}
-```
-
-### Screenshot
-![confirm-modal](./demo/confirm.png)
-
-## ConfirmModal
-### Тэг: 
-```html
-<app-modal></app-modal>
-```
-### Компонент
-* @Input() modal: IModal
-### Реализация
-Для реализации 
-необходимо передавать в
-атрибут **[modal]** объект с интерфейосм:
-```ts
-export interface IModal {
-  img?: string;
-  state?: string;
-  text: string;
-  success?: boolean;
-}
-```
-
-### Screenshot
-![modal](./demo/modal.png)
