@@ -81,10 +81,9 @@ import {MatSelectModule} from '@angular/material/select';
 ## Dot
 ### Тэг: 
 ```html
-<div></div>
+<gen-dot></gen-dot>
 ```
 ### Директивы
-* appDot
 * color
 
 ### Переменные
@@ -94,8 +93,7 @@ import {MatSelectModule} from '@angular/material/select';
 * $dot-border-radius: border-radius dot
 
 ### Реализация
-Для работоспособности компонента, необходимо в тег **div** записать два attributes:
-* appDot
+Для работоспособности компонента, необходимо в тег **div** записать attribute:
 * color (primary, warn, pink, gradient, accent, green)
 ```ts
 import {MatButtonModule} from '@angular/material/button';
