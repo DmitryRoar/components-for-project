@@ -335,5 +335,100 @@ import {MatButtonModule} from '@angular/material/button';
 import {MatButtonModule} from '@angular/material/button';
 ```
 
-![input](./demo/datepicker.png)
+![datepicker](./demo/datepicker.png)
 
+## Input
+### Тэг: 
+```html
+<app-input></app-input>
+```
+### Компонент
+* @Input() input: IInput
+### Реализация
+Для реализации 
+необходимо передавать в
+атрибут **[select]** объект с интерфейосм:
+```ts
+export interface IInput {
+  img: string;
+  label: string;
+  required: boolean;
+}
+```
+
+### Screenshot
+![input](./demo/input.png)
+
+## StudentFeedback
+### Тэг: 
+```html
+<app-student-feedback></app-student-feedback>
+```
+### Компонент
+* @Input() feedback: IFeedback
+### Реализация
+Для реализации 
+необходимо передавать в
+атрибут **[feedback]** объект с интерфейосм:
+```ts
+interface IFeedbackEmoji {
+  emoji: string;
+  text: string;
+}
+interface IHomeWorkStatus {
+  completed: boolean;
+  date?: string;
+}
+
+export interface IFeedback {
+  homework: IHomeWorkStatus;
+  feedback: IFeedbackEmoji
+}
+```
+
+### Screenshot
+![student-feedback](./demo/student-feedback.png)
+
+## ConfirmModal
+### Тэг: 
+```html
+<app-confirm></app-confirm>
+```
+### Компонент
+* @Input() confirm: IConfirm
+### Реализация
+Для реализации 
+необходимо передавать в
+атрибут **[confirm]** объект с интерфейосм:
+```ts
+export interface IConfirm {
+  title: string;
+  desc: string;
+}
+```
+
+### Screenshot
+![confirm-modal](./demo/confirm.png)
+
+## ConfirmModal
+### Тэг: 
+```html
+<app-modal></app-modal>
+```
+### Компонент
+* @Input() modal: IModal
+### Реализация
+Для реализации 
+необходимо передавать в
+атрибут **[modal]** объект с интерфейосм:
+```ts
+export interface IModal {
+  img?: string;
+  state?: string;
+  text: string;
+  success?: boolean;
+}
+```
+
+### Screenshot
+![modal](./demo/modal.png)
