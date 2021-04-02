@@ -2,6 +2,50 @@
 содержать в себе enum **changeDetection**, 
 со значением **ChangeDetectionStrategy.OnPush**
 
+## TextareaComponent
+### Выполняет: Dmitry
+### Тэг: 
+```html
+<gen-textarea></gen-textarea>
+```
+### Компонент
+@Input() textarea: TextArea
+### Переменные
+////
+
+### Реализация
+Для реализации 
+необходимо передавать в
+атрибут **[input]** объект с интерфейосм:
+```ts
+export interface TextArea {
+  title: string;
+  maxLength: number;
+}
+```
+### Screenshot
+![textarea](./demo/textarea.png)
+
+## RadioButton
+### Выполняет: Lado
+### Тэг: 
+```html
+<mat-radio-button></mat-radio-button>
+```
+### Аттрибуты
+color (primary, accent, warn)
+### Переменные
+////
+
+### Реализация
+Для реализации 
+необходимо импоритровать модуль
+```ts
+import {MatRadioModule} from '@angular/material/radio'
+```
+### Screenshot
+![radio-button](./demo/radio-button.png)
+
 ## Checkbox
 ### Выполняет: Dmitry
 ### Тэг: 
