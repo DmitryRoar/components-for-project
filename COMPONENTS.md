@@ -11,11 +11,18 @@
 ### Директивы
 * color
 
+### Переменные
+> src/assets/styles/vars/checkbox.scss
+* $checkbox-height - высота checkbox'a
+* $checkbox-width - ширина checkbox'a
+
 ### Реализация
 Angular Material Checkbox, для реализации необходим import
 ```ts
 import {MatCheckboxModule} from '@angular/material/checkbox';
 ```
+### Screenshot
+![checkbox](./demo/checkbox.png)
 
 ## Button
 ### Выполняет: Dmitry
@@ -30,74 +37,46 @@ import {MatCheckboxModule} from '@angular/material/checkbox';
 * mat-stroked-button
 * color
 
-### Реализация
-Angular Material Button, для реализации необходим import
-```ts
-import {MatButtonModule} from '@angular/material/button';
-```
-Для сменя цветовой палитры необходимо 
-перейти в файл assets/styles/_var.scss
+### Переменные 
+> src/assets/styles/vars/button.scss
+* $button-size: font-size кнопки
+> src/assets/styles/vars/general.scss
 * $mat-primary - оранжевый цвет
 * $mat-accent - синий цвет
 * $mat-warn - красный цвет
 * не передавая атрибут color - белый цвет
 
-$button-size - font-size кнопки
+### Реализация
+Angular Material Button, для реализации необходим import
+```ts
+import {MatButtonModule} from '@angular/material/button';
+```
 
 ### Screenshot
 ![button](./demo/button.png)
-
-## Checkbox
-### Выполняет: Dmitry
-### Тэг: 
-```html
-<mat-checkbox></mat-checkbox>
-```
-### Директивы
-* color
-
-### Переменные
-* $checkbox-height: высота checkbox'a;
-* $checkbox-width: ширина checkbox'a;
-
-### Реализация
-Angular Material Checkbox, для реализации необходим import
-```ts
-import {MatCheckboxModule} from '@angular/material/checkbox';
-```
-
-### Screenshot
-![button](./demo/checkbox.png)
 
 ## Select
 ### Выполняет: Alexander
 ### Тэг: 
 ```html
-<gen-select></gen-select>
+<mat-select>
+    <mat-option></mat-option>
+</mat-select>
 ```
-### Компонент
-* @Input() select: Select
+### Переменные
+> src/assets/styles/vars/general.scss
+* $border-radius
+> src/assets/styles/vars/input.scss
+* $input-padding
+
 ### Реализация
 Для реализации 
-необходимо передавать в
-атрибут **[select]** объект с интерфейосм:
-```ts
-interface SelectOptions {
-  value: string;
-}
-
-export interface Select {
-  title: string;
-  options: SelectOptions[];
-}
-```
-сделать import, т.к. компонент angular material
+необходимо импортировать angular material модуль
 ```ts
 import {MatSelectModule} from '@angular/material/select';
 ```
-
 ### Screenshot
-![button](./demo/select.png)
+![select](./demo/select.png)
 
 ## Dot
 ### Тэг: 
@@ -109,6 +88,7 @@ import {MatSelectModule} from '@angular/material/select';
 * color
 
 ### Переменные
+> src/assets/styles/vars/dot.scss
 * $dot-height: высота dot
 * $dot-width: ширина dot
 * $dot-border-radius: border-radius dot
@@ -134,7 +114,7 @@ import {MatButtonModule} from '@angular/material/button';
 ### Реализация
 Для работоспособности компонента необходимо сделать импорт модуля
 ```ts
-import {MatButtonModule} from '@angular/material/button';
+import {MatDatepickerModule} from '@angular/material/button';
 ```
 
 ![datepicker](./demo/datepicker.png)
@@ -147,10 +127,13 @@ import {MatButtonModule} from '@angular/material/button';
 ```
 ### Компонент
 * @Input() input: Input
+### Переменные
+> src/assets/styles/input.scss
+* $input-padding: внутренние отступы input'a
 ### Реализация
 Для реализации 
 необходимо передавать в
-атрибут **[select]** объект с интерфейосм:
+атрибут **[input]** объект с интерфейосм:
 ```ts
 export interface Input {
   img: string;
@@ -170,6 +153,13 @@ export interface Input {
 ```
 ### Компонент
 * @Input() feedback: Feedback
+
+### Переменные
+> src/assets/styles/vars/general.scss
+* $accent-gradient: синий градиент
+> src/assets/styles/vars/student-feedback.scss
+* $padding: внутренние отступы select'a;
+
 ### Реализация
 Для реализации 
 необходимо передавать в
@@ -201,6 +191,9 @@ export interface Feedback {
 ```
 ### Компонент
 * @Input() confirm: Confirm
+### Переменные
+> src/assets/styles/vars/general.scss
+* $border-radius
 ### Реализация
 Для реализации 
 необходимо передавать в
@@ -223,6 +216,10 @@ export interface Confirm {
 ```
 ### Компонент
 * @Input() modal: Modal
+### Переменные
+> src/assets/styles/vars/general.scss
+* $border-radius
+* $accent-gradient
 ### Реализация
 Для реализации 
 необходимо передавать в
