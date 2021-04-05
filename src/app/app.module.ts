@@ -11,12 +11,8 @@ import {MatDatepickerModule} from '@angular/material/datepicker';
 import {MatRadioModule} from '@angular/material/radio';
 import {MatIconModule} from '@angular/material/icon';
 
-import {DrawerDirective} from './shared/directives/drawer.directive';
-import {DotDirective} from './shared/directives/dot.directive';
-
 import {AppComponent} from './app.component';
 import {CardComponent} from './shared/components/card/card.component';
-import {DrawerComponent} from './shared/components/drawer/drawer.component';
 import {MatNativeDateModule} from '@angular/material/core';
 import {InputComponent} from './shared/components/input/input.component';
 import {FeedbackComponent} from './shared/components/feedback/feedback.component';
@@ -26,13 +22,12 @@ import {ConfirmComponent} from './shared/components/confirm/confirm.component';
 import {ModalComponent} from './shared/components/modal/modal.component';
 import {SelectComponent} from './shared/components/select/select.component';
 import {DatepickerComponent} from './shared/components/datepicker/datepicker.component';
+import {DotComponent} from './shared/components/dot/dot.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     CardComponent,
-    DrawerComponent,
-    DrawerDirective,
     InputComponent,
     FeedbackComponent,
     HomeworkStatusComponent,
@@ -40,8 +35,8 @@ import {DatepickerComponent} from './shared/components/datepicker/datepicker.com
     ConfirmComponent,
     ModalComponent,
     SelectComponent,
-    DotDirective,
-    DatepickerComponent
+    DatepickerComponent,
+    DotComponent
   ],
   imports: [
     BrowserModule,

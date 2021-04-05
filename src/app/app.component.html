@@ -2,17 +2,6 @@
   Primary
 </mat-radio-button>
 
-<!-- drawer -->
-<div class="wrap">
-  <button
-    (click)="createDrawer()"
-    mat-flat-button
-    color="accent"
-  >
-    open drawer
-  </button>
-  <ng-template drawerRef></ng-template>
-</div>
 <!-- button -->
 <div class="wrap">
   <button mat-flat-button color="primary">primary</button>
@@ -33,12 +22,13 @@
 </div>
 <!-- dot -->
 <div class="wrap flex">
-  <div appDot color="warn"></div>
-  <div appDot color="primary"></div>
-  <div appDot color="accent"></div>
-  <div appDot color="pink"></div>
-  <div appDot color="gradient"></div>
-  <div appDot color="green"></div>
+  <gen-dot color="accent"></gen-dot>
+  <gen-dot color="primary"></gen-dot>
+  <gen-dot color="pink"></gen-dot>
+  <gen-dot color="gradient"></gen-dot>
+  <gen-dot color="green"></gen-dot>
+  <gen-dot color="warn"></gen-dot>
+  <gen-dot></gen-dot>
 </div>
 <!-- datepicker -->
 <div class="wrap">

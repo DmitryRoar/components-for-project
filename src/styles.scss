@@ -68,16 +68,8 @@ mat-form-field {
   display: flex;
   justify-content: center;
   width: 100%;
-  font-size: $button-size;
-}
-
-mat-checkbox .mat-checkbox-inner-container {
-  width: $checkbox-width;
-  height: $checkbox-height;
-}
-
-.mat-checkbox .mat-checkbox-frame {
-  border: 2px solid $gray-color;
+  font-size: $button-size !important;
+  border-radius: $border-radius !important;
 }
 
 .dot {
@@ -170,6 +162,24 @@ mat-checkbox .mat-checkbox-inner-container {
       h3 {
         font-size: 20px;
       }
+    }
+  }
+}
+
+mat-checkbox {
+  &.inner-container {
+    width: $checkbox-width;
+    height: $checkbox-height;
+  }
+
+  .mat-checkbox {
+    &-frame {
+      border: 2px solid $inactive-color !important;
+      border-radius: 5px !important;
+    }
+    &-background {
+      background-color: transparent !important;
+      border-radius: 5px !important;
     }
   }
 }

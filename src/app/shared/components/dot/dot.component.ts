@@ -1,12 +1,13 @@
-import {Directive, ElementRef, Input, OnInit, Renderer2} from '@angular/core';
+import {Component, ElementRef, Input, OnInit, Renderer2} from '@angular/core';
+import {IDot, NamesColor} from '../../interfaces/dot.interface';
 
-import {IDot, NamesColor} from '../interfaces/dot.interface';
-
-@Directive({
-  selector: '[appDot]'
+@Component({
+  selector: 'gen-dot',
+  templateUrl: './dot.component.html',
+  styleUrls: ['./dot.component.scss']
 })
-export class DotDirective implements OnInit {
-  @Input('color') selectedColor: NamesColor;
+export class DotComponent implements OnInit {
+  @Input() color: NamesColor;
 
   colors: IDot[] = [
     {name: 'primary', color: '#FF7A3D'},
@@ -27,9 +28,10 @@ export class DotDirective implements OnInit {
 
   ngOnInit(): void {
     this.colors.filter(color => {
-      if (color.name === this.selectedColor) {
+      if (color.name === this.color) {
         this.r.setStyle(this.el.nativeElement, 'background', color.color);
       }
     });
   }
+
 }
