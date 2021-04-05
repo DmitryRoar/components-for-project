@@ -41,7 +41,7 @@ export interface Modal {
 * две кнопки из angular material: одна с цветом primary, другая без цвета 
 * текст, описание - передаваемые в объекте modal
 ## Компонент
-@Output() answer = new EventEmitter<boolean>()
+@Output() answer = new EventEmitter<boolean>(); <br>
 modal: ConfirmModal;
  
 ```ts
