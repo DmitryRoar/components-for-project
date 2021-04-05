@@ -42,7 +42,7 @@ export interface Modal {
 * текст, описание - передаваемые в объекте modal
 ## Компонент
 @Output() answer = new EventEmitter<boolean>(); <br>
-modal: ConfirmModal;
+@Input() modal: ConfirmModal;
  
 ```ts
 export interface ConfirmModal {
@@ -71,7 +71,7 @@ export interface ConfirmModal {
 * иконки из собственного компонента с их генерацией
 * два select из angular material (если holiday === false)
 ## Компонент
-modal: ScheduleModal;
+@Input() modal: ScheduleModal; <br>
 form: FormGroup;
  
 ```ts
