@@ -132,3 +132,26 @@
 ```
 ![select-subject](./demo/my-components/select-subject.png)
 
+[more](COMPONENTS.md)
+
+```html
+<gen-select-subject></gen-select-subject>
+<gen-select-student></gen-select-student>
+<gen-btn-round></gen-btn-round>
+<gen-lesson-student-card></gen-lesson-student-card>
+<gen-textarea></gen-textarea>
+<gen-week-calendar></gen-week-calendar>
+<gen-img-empty></gen-img-empty>
+<gen-card-header></gen-card-header>
+<gen-fap-button-menu></gen-fap-button-menu>
+<gen-subject-card></gen-subject-card>
+<gen-photo-button></gen-photo-button>
+<gen-emoji></gen-emoji>
+<gen-validation-alert></gen-validation-alert>
+<gen-select-time-hours></gen-select-time-hours>
+<gen-input-bd></gen-input-bd>
+<gen-img-button></gen-img-button>
+<gen-dot></gen-dot>
+<gen-img></gen-img>
+<button></button>
+```
