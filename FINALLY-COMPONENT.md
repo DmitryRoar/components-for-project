@@ -21,9 +21,9 @@
 ```
 ![dot](./demo/my-components/dot.png)
 
-## ImgButton
+## BtnFap
 ```html
-<gen-img-button></gen-img-button>
+<gen-btn-fap></gen-btn-fap>
 ```
 ![img-button](./demo/my-components/img-button.png)
 
@@ -39,7 +39,6 @@
 ```
 ![select](./demo/my-components/select.png)
 
-
 ## ValidationAlert
 ### HTML
 ```html
@@ -54,31 +53,38 @@
 ```
 ![emoji-feedback](./demo/my-components/emoji-feedback.png)
 
-## PhotoButtonComponent
+## BtnNext
 ### HTML
 ```html
-<gen-photo-button></gen-photo-button>
+<gen-btn-next></gen-btn-next>
 ```
 ![photo-button](./demo/my-components/photo-button.png)
 
-## SubjectCard
+## DocLoadList
 ### HTML
 ```html
-<gen-subject-card></gen-subject-card>
+<gen-doc-load-list></gen-doc-load-list>
+```
+![photo-button](./demo/my-components/photo.png)
+
+## CardSchedule
+### HTML
+```html
+<gen-card-schedule></gen-card-schedule>
 ```
 ![schedule-card](./demo/my-components/schedule-card.png)
 
-## FapButton
+## BtnFap
 ### HTML
 ```html
-<gen-fap-button-menu></gen-fap-button-menu>
+<gen-btn-fap-menu></gen-btn-fap-menu>
 ```
 ![fap-button-menu](./demo/my-components/fap-button-menu.png)
 
-## CardHeader
+## LessonTitle
 ### HTML
 ```html
-<gen-card-header></gen-card-header>
+<gen-card-lesson-title></gen-card-lesson-title>
 ```
 ![lesson-card-header](./demo/my-components/lesson-card-header.png)
 
@@ -90,10 +96,10 @@
 ![schedule-img-empty](./demo/my-components/schedule-img-empty.png)
 ![schedule-img-empty](./demo/my-components/schedule-img-empty-2.png)
 
-## WeekCalendar
+## CalendarWeek
 ### HTML
 ```html
-<gen-week-calendar></gen-week-calendar>
+<gen-calendar-week></gen-calendar-week>
 ```
 ![week-calendar](./demo/my-components/week-calendar.png)
 
@@ -104,10 +110,10 @@
 ```
 ![textarea](./demo/my-components/textarea.png)
 
-## LessonStudentCard
+## CardLesson
 ### HTML
 ```html
-<gen-lesson-student-card></gen-lesson-student-card>
+<gen-card-lesson></gen-card-lesson>
 ```
 ![student-card](./demo/my-components/student-card.png)
 
