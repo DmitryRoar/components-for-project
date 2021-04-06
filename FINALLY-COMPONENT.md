@@ -31,7 +31,7 @@
 ```html
 <gen-input-bd></gen-input-bd>
 ```
-![img-button](./demo/my-components/inputBd.png)
+![img-button](./demo/my-components/InputBd.png)
 
 ## SelectTimeHours
 ```html
