@@ -39,10 +39,10 @@
 ```
 ![select](./demo/my-components/select.png)
 
-## ValidationAlert
+## Validation
 ### HTML
 ```html
-<gen-validation-alert></gen-validation-alert>
+<gen-validation></gen-validation>
 ```
 ![validation-alert](./demo/my-components/validation-alert.png)
 
@@ -141,23 +141,24 @@
 [more](COMPONENTS.md)
 
 ```html
-<gen-select-subject></gen-select-subject>
-<gen-select-student></gen-select-student>
-<gen-btn-round></gen-btn-round>
-<gen-lesson-student-card></gen-lesson-student-card>
-<gen-textarea></gen-textarea>
-<gen-week-calendar></gen-week-calendar>
-<gen-img-empty></gen-img-empty>
-<gen-card-header></gen-card-header>
-<gen-fap-button-menu></gen-fap-button-menu>
-<gen-subject-card></gen-subject-card>
-<gen-photo-button></gen-photo-button>
-<gen-emoji></gen-emoji>
-<gen-validation-alert></gen-validation-alert>
-<gen-select-time-hours></gen-select-time-hours>
-<gen-input-bd></gen-input-bd>
-<gen-img-button></gen-img-button>
-<gen-dot></gen-dot>
-<gen-img></gen-img>
 <button></button>
+<gen-img></gen-img>
+<gen-dot></gen-dot>
+<gen-btn-fap></gen-btn-fap>
+<gen-input-bd></gen-input-bd>
+<gen-select-time-hours></gen-select-time-hours>
+<gen-validation></gen-validation>
+<gen-emoji></gen-emoji>
+<gen-btn-next></gen-btn-next>
+<gen-doc-load-list></gen-doc-load-list>
+<gen-card-schedule></gen-card-schedule>
+<gen-btn-fap-menu></gen-btn-fap-menu>
+<gen-card-lesson-title></gen-card-lesson-title>
+<gen-img-empty></gen-img-empty>
+<gen-calendar-week></gen-calendar-week>
+<gen-textarea></gen-textarea>
+<gen-card-lesson></gen-card-lesson>
+<gen-btn-round></gen-btn-round>
+<gen-select-student></gen-select-student>
+<gen-select-subject></gen-select-subject>
 ```
