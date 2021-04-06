@@ -1,9 +1,15 @@
-## Button
+## BtnCornerEdges
 ```html
-<button></button>
+<gen-btn-corner-edges></gen-btn-corner-edges>
+```
+![button](./demo/my-components/button2.png)
+
+## BtnCornerEdges
+```html
+<gen-btn-modal></gen-btn-modal>
 ```
 ![button](./demo/my-components/button.png)
-![button](./demo/my-components/button2.png)
+
 
 ## Img
 ```html
@@ -88,10 +94,10 @@
 ```
 ![lesson-card-header](./demo/my-components/lesson-card-header.png)
 
-## ImgEmpty
+## Card
 ### HTML
 ```html
-<gen-img-empty></gen-img-empty>
+<gen-card></gen-card>
 ```
 ![schedule-img-empty](./demo/my-components/schedule-img-empty.png)
 ![schedule-img-empty](./demo/my-components/schedule-img-empty-2.png)
@@ -137,6 +143,22 @@
 <gen-select-subject></gen-select-subject>
 ```
 ![select-subject](./demo/my-components/select-subject.png)
+
+## CardHomework
+### HTML
+```html
+<gen-card-homework></gen-card-homework>
+```
+![gen-card-homework](./demo/my-components/gen-card-homework-2.png)
+
+## BtnFab
+### HTML
+```html
+<gen-btn-fab></gen-btn-fab>
+```
+![btn-fab](./demo/my-components/gen-btn-fab.png)
+
+
 
 [more](COMPONENTS.md)
 
