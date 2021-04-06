@@ -4,7 +4,7 @@
 ```
 ![button](./demo/my-components/button2.png)
 
-## BtnCornerEdges
+## BtnCornerModal
 ```html
 <gen-btn-modal></gen-btn-modal>
 ```
