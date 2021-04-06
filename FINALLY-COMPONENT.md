@@ -27,12 +27,6 @@
 ```
 ![dot](./demo/my-components/dot.png)
 
-## BtnFap
-```html
-<gen-btn-fap></gen-btn-fap>
-```
-![img-button](./demo/my-components/img-button.png)
-
 ## InputBd
 ```html
 <gen-input-bd></gen-input-bd>
@@ -80,7 +74,7 @@
 ```
 ![schedule-card](./demo/my-components/schedule-card.png)
 
-## BtnFap
+## BtnFapMenu
 ### HTML
 ```html
 <gen-btn-fap-menu></gen-btn-fap-menu>
@@ -157,13 +151,20 @@
 <gen-btn-fab></gen-btn-fab>
 ```
 ![btn-fab](./demo/my-components/gen-btn-fab.png)
+![img-button](./demo/my-components/img-button.png)
 
-
+## BtnIcon
+### HTML
+```html
+<gen-btn-icon></gen-btn-icon>
+```
+![btn-icon](./demo/my-components/btn-icon.png)
 
 [more](COMPONENTS.md)
 
 ```html
-<button></button>
+<gen-btn-corner-edges></gen-btn-corner-edges>
+<gen-btn-modal></gen-btn-modal>
 <gen-img></gen-img>
 <gen-dot></gen-dot>
 <gen-btn-fap></gen-btn-fap>
@@ -176,11 +177,13 @@
 <gen-card-schedule></gen-card-schedule>
 <gen-btn-fap-menu></gen-btn-fap-menu>
 <gen-card-lesson-title></gen-card-lesson-title>
-<gen-img-empty></gen-img-empty>
+<gen-card></gen-card>
 <gen-calendar-week></gen-calendar-week>
 <gen-textarea></gen-textarea>
 <gen-card-lesson></gen-card-lesson>
 <gen-btn-round></gen-btn-round>
 <gen-select-student></gen-select-student>
 <gen-select-subject></gen-select-subject>
+<gen-card-homework></gen-card-homework>
+<gen-btn-icon></gen-btn-icon>
 ```
