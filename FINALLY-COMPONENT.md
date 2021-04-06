@@ -81,7 +81,7 @@
 ```
 ![fap-button-menu](./demo/my-components/fap-button-menu.png)
 
-## LessonTitle
+## CardLessonTitle
 ### HTML
 ```html
 <gen-card-lesson-title></gen-card-lesson-title>
