@@ -51,7 +51,14 @@
 ```html
 <gen-emoji></gen-emoji>
 ```
-![emoji-feedback](./demo/my-components/emoji-feedback.png)
+![emoji](./demo/my-components/emojii.png)
+
+## CardEmoji
+### HTML
+```html
+<gen-card-emoji></gen-card-emoji>
+```
+![card-emoji](./demo/my-components/emoji-feedback.png)
 
 ## BtnNext
 ### HTML
@@ -184,6 +191,7 @@
 <gen-input-bd></gen-input-bd>
 <gen-validation></gen-validation>
 <gen-emoji></gen-emoji>
+<gen-card-emoji></gen-card-emoji>
 <gen-doc-load-list></gen-doc-load-list>
 <gen-calendar-week></gen-calendar-week>
 ```
