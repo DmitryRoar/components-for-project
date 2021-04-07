@@ -1,19 +1,23 @@
-## BtnCornerEdges
+## BtnCorner
 ```html
-<gen-btn-corner-edges></gen-btn-corner-edges>
+<button mat-flat-button disabled color="accent" class="corner">
+  <gen-icon name=""></gen-icon>
+</button>
+<button mat-flat-button class="corner" color="primary"></button>
+<button mat-flat-button disabled class="corner" color="primary"></button>
 ```
 ![button](./demo/my-components/button2.png)
+![photo-button](./demo/my-components/photo-button.png)
 
-## BtnCornerModal
+## BtnBottom
 ```html
-<gen-btn-modal></gen-btn-modal>
+<button mat-flat-button class="bottom" color="primary"></button>
 ```
 ![button](./demo/my-components/button.png)
 
-
-## Img
+## Icon
 ```html
-<gen-img></gen-img>
+<gen-icon></gen-icon>
 ```
 ![get-img](./demo/my-components/get-img.png)
 ![get-img](./demo/my-components/get-img2.png)
@@ -29,15 +33,18 @@
 
 ## InputBd
 ```html
-<gen-input-bd></gen-input-bd>
+<gen-datepicker></gen-datepicker>
 ```
 ![img-button](./demo/my-components/InputBd.png)
 
-## SelectTimeHours
+## Select
 ```html
-<gen-select-time-hours></gen-select-time-hours>
+<gen-select></gen-select>
 ```
 ![select](./demo/my-components/select.png)
+![select-student](./demo/my-components/select-student.png)
+![select-subject](./demo/my-components/select-subject.png)
+
 
 ## Validation
 ### HTML
@@ -46,13 +53,6 @@
 ```
 ![validation-alert](./demo/my-components/validation-alert.png)
 
-## Emoji
-### HTML
-```html
-<gen-emoji></gen-emoji>
-```
-![emoji](./demo/my-components/emojii.png)
-
 ## CardEmoji
 ### HTML
 ```html
@@ -60,17 +60,10 @@
 ```
 ![card-emoji](./demo/my-components/emoji-feedback.png)
 
-## BtnNext
-### HTML
-```html
-<gen-btn-next></gen-btn-next>
-```
-![photo-button](./demo/my-components/photo-button.png)
-
 ## DocLoadList
 ### HTML
 ```html
-<gen-doc-load-list></gen-doc-load-list>
+<gen-doc-list></gen-doc-list>
 ```
 ![photo-button](./demo/my-components/photo.png)
 
@@ -84,21 +77,21 @@
 ## BtnFapMenu
 ### HTML
 ```html
-<gen-btn-fap-menu></gen-btn-fap-menu>
+<gen-fap-menu></gen-fap-menu>
 ```
 ![fap-button-menu](./demo/my-components/fap-button-menu.png)
 
-## CardLessonTitle
+## CardTitle
 ### HTML
 ```html
-<gen-card-lesson-title></gen-card-lesson-title>
+<gen-card-title></gen-card-title>
 ```
 ![lesson-card-header](./demo/my-components/lesson-card-header.png)
 
-## Card
+## CardEmpty
 ### HTML
 ```html
-<gen-card></gen-card>
+<gen-card-empty></gen-card-empty>
 ```
 ![schedule-img-empty](./demo/my-components/schedule-img-empty.png)
 ![schedule-img-empty](./demo/my-components/schedule-img-empty-2.png)
@@ -127,71 +120,34 @@
 ## BtnRound
 ### HTML
 ```html
-<gen-btn-round></gen-btn-round>
+<button mat-flat-button>
+  <get-icon></get-icon>
+</button>
+<button mat-flat-button class="reverse" color="accent">
+  <get-icon></get-icon>
+</button>
 ```
 ![btn-round](./demo/my-components/btn-round.png)
 
-## SelectStudent
+## Select
 ### HTML
 ```html
-<gen-select-student></gen-select-student>
+<gen-select></gen-select>
 ```
-![select-student](./demo/my-components/select-student.png)
 
-## SelectSubject
+## BtnCircle
 ### HTML
 ```html
-<gen-select-subject></gen-select-subject>
+<button mat-flat-button class="reverse circle">
+  <gen-icon></gen-icon>
+</button>
 ```
-![select-subject](./demo/my-components/select-subject.png)
-
-## CardHomework
-### HTML
-```html
-<gen-card-homework></gen-card-homework>
-```
-![gen-card-homework](./demo/my-components/gen-card-homework-2.png)
-
-## BtnFab
-### HTML
-```html
-<gen-btn-fab></gen-btn-fab>
-```
-![btn-fab](./demo/my-components/gen-btn-fab.png)
 ![img-button](./demo/my-components/img-button.png)
-
-## BtnIcon
-### HTML
-```html
-<gen-btn-icon></gen-btn-icon>
-```
 ![btn-icon](./demo/my-components/btn-icon.png)
 
-[more](COMPONENTS.md)
+[prev list](https://github.com/DmitryRoar/components-for-project/blob/master/COMPONENTS.md)
 
 ```html
-<gen-btn-corner-edges></gen-btn-corner-edges>
-<gen-btn-modal></gen-btn-modal>
-<gen-btn-fap></gen-btn-fap>
-<gen-btn-next></gen-btn-next>
-<gen-btn-fap-menu></gen-btn-fap-menu>
-<gen-btn-round></gen-btn-round>
-<gen-btn-icon></gen-btn-icon>
-<gen-select-time-hours></gen-select-time-hours>
-<gen-select-student></gen-select-student>
-<gen-select-subject></gen-select-subject>
-<gen-card-lesson></gen-card-lesson>
-<gen-card-homework></gen-card-homework>
-<gen-card></gen-card>
-<gen-card-lesson-title></gen-card-lesson-title>
-<gen-card-schedule></gen-card-schedule>
-<gen-textarea></gen-textarea>
-<gen-img></gen-img>
-<gen-dot></gen-dot>
-<gen-input-bd></gen-input-bd>
-<gen-validation></gen-validation>
-<gen-emoji></gen-emoji>
-<gen-card-emoji></gen-card-emoji>
-<gen-doc-load-list></gen-doc-load-list>
-<gen-calendar-week></gen-calendar-week>
+<gen-icon></gen-icon>
+<gen-select></gen-select>
 ```
