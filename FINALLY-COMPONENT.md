@@ -153,6 +153,13 @@
 ```
 ![trackbar-distance](./demo/my-components/trackbar-distance.jpg)
 
+## ChatBubble
+### HTML
+```html
+<gen-chat-bubble></gen-chat-bubble>
+```
+![chat-bubble](./demo/my-components/chat-bubble.png)
+
 ## Button
 ### Цвета
 * primary - оранжевый цвет
@@ -184,6 +191,25 @@
 <gen-input-search></gen-input-search>
 <gen-btn-dot></gen-btn-dot>
 ```
+## GenIcon
+```html
+<gen-icon>name</gen-icon>
+<mat-icon svgIcon='name'></mat-icon>
+```
+### Цвета
+* purple #061283 
+* orange #FF7A3D
+* white #FFFFFF
+* white-gray #DDE2E7
+* blue-gradient linear-gradient(90deg, #2C83DA 0%, #4AB7F8 100%)
+### Размеры height: auto; width:
+* xxl 40px
+* xl 38px
+* l 30px
+* m 26px
+* s 20px
+* xs 16px
+* xxs 11px
 
 ## TextList
 ### Цвета: 
@@ -215,18 +241,3 @@
 ### Положение: 
 * center
 * right
-
-## Цвета
-* purple #061283 
-* orange #FF7A3D
-* white #FFFFFF
-* white-gray #DDE2E7
-* blue-gradient linear-gradient(90deg, #2C83DA 0%, #4AB7F8 100%)
-## Размеры height: auto; width:
-* xxl 40px
-* xl 38px
-* l 30px
-* m 26px
-* s 20px
-* xs 16px
-* xxs 11px
