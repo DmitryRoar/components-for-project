@@ -273,10 +273,12 @@
 ```
 
 ## Выполняет Dmitry
-* button
-* <gen-btn-dot></gen-btn-dot>
-* <gen-input-location></gen-input-location>
-* <gen-checkbox></gen-checkbox>
-* <gen-textarea></gen-textarea>
-* <gen-datepicker></gen-datepicker>
-* <gen-dot></gen-dot>
+```html
+<button></button>
+<gen-btn-dot></gen-btn-dot>
+<gen-input-location></gen-input-location>
+<gen-checkbox></gen-checkbox>
+<gen-textarea></gen-textarea>
+<gen-datepicker></gen-datepicker>
+<gen-dot></gen-dot>
+```
