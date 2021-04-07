@@ -97,7 +97,6 @@ import {MatDatepickerModule} from '@angular/material/datepicker';
 ```
 ### Реализация
 На вход принимает объект **data**
-```
 ![textarea](./demo/my-components/textarea.png)
 
 ## BtnFab
