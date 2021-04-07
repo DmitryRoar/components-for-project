@@ -112,6 +112,13 @@
 <button mat-flat-button class="corner" color="primary"></button>
 <button mat-flat-button disabled class="corner" color="primary"></button>
 ```
+### Реализация
+* в элемент тег передавать класс **corner** 
+* в качестве атрибута передавать **mat-fab** 
+* Material Angular, для реализации необходим импорт нужного модуля
+```ts
+import {MatButtonModule} from '@angular/material/button';
+```
 ![button](./demo/my-components/button2.png)
 ![photo-button](./demo/my-components/photo-button.png)
 
@@ -120,6 +127,13 @@
 ### HTML
 ```html
 <button mat-flat-button class="bottom" color="primary"></button>
+```
+### Реализация
+* в элемент тег передавать класс **bottom**
+* в качестве атрибута передавать **mat-flat-button** 
+* Material Angular, для реализации необходим импорт нужного модуля
+```ts
+import {MatButtonModule} from '@angular/material/button';
 ```
 ![button](./demo/my-components/button.png)
 
@@ -152,16 +166,6 @@ import {MatDatepickerModule} from '@angular/material/datepicker';
 ```
 ![img-button](./demo/my-components/InputBd.png)
 
-## Textarea
-### Выполняет Dmitry
-### HTML
-```html
-<gen-textarea></gen-textarea>
-```
-### Реализация
-На вход принимает объект **data**
-![textarea](./demo/my-components/textarea.png)
-
 ## BtnFab
 ### Выполняет Dmitry
 ### HTML
@@ -171,7 +175,9 @@ import {MatDatepickerModule} from '@angular/material/datepicker';
 </button>
 ```
 ### Реализация
-Material Angular, для реализации необходим импорт нужного модуля
+* в элемент тег передавать класс **reverse**
+* в качестве атрибута передавать **mat-fab**
+* Material Angular, для реализации необходим импорт нужного модуля
 ```ts
 import {MatButtonModule} from '@angular/material/button';
 ```
@@ -190,6 +196,16 @@ Material Angular, для реализации необходим импорт н
 import {MatButtonModule} from '@angular/material/button';
 ```
 ![btn-dot](./demo/my-components/btn-dot.png)
+
+## Textarea
+### Выполняет Dmitry
+### HTML
+```html
+<gen-textarea></gen-textarea>
+```
+### Реализация
+На вход принимает объект **data**
+![textarea](./demo/my-components/textarea.png)
 
 ## Checkbox
 ### Выполняет Dmitry
