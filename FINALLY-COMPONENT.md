@@ -113,7 +113,7 @@
 <button mat-flat-button disabled class="corner" color="primary"></button>
 ```
 ### Реализация
-* в элемент тег передавать класс **corner** 
+* в элемент передавать класс **corner** 
 * в качестве атрибута передавать **mat-fab** 
 * Material Angular, для реализации необходим импорт нужного модуля
 ```ts
@@ -129,7 +129,7 @@ import {MatButtonModule} from '@angular/material/button';
 <button mat-flat-button class="bottom" color="primary"></button>
 ```
 ### Реализация
-* в элемент тег передавать класс **bottom**
+* в элемент передавать класс **bottom**
 * в качестве атрибута передавать **mat-flat-button** 
 * Material Angular, для реализации необходим импорт нужного модуля
 ```ts
@@ -175,7 +175,7 @@ import {MatDatepickerModule} from '@angular/material/datepicker';
 </button>
 ```
 ### Реализация
-* в элемент тег передавать класс **reverse**
+* в элемент передавать класс **reverse**
 * в качестве атрибута передавать **mat-fab**
 * Material Angular, для реализации необходим импорт нужного модуля
 ```ts
