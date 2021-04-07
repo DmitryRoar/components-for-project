@@ -216,17 +216,17 @@
 * center
 * right
 
-## Colors
-purple #061283 #061283
-orange #FF7A3D #FF7A3D
-white #FFFFFF #FFFFFF
-white-gray #FFFFFF #DDE2E7
-blue-gradient linear-gradient(90deg, #2C83DA 0%, #4AB7F8 100%)
-Sizes height: auto; width:
-xxl 40px
-xl 38px
-l 30px
-m 26px
-s 20px
-xs 16px
-xxs 11px
+## Цвета
+* purple #061283 
+* orange #FF7A3D
+* white #FFFFFF
+* white-gray #DDE2E7
+* blue-gradient linear-gradient(90deg, #2C83DA 0%, #4AB7F8 100%)
+## Размеры height: auto; width:
+* xxl 40px
+* xl 38px
+* l 30px
+* m 26px
+* s 20px
+* xs 16px
+* xxs 11px
