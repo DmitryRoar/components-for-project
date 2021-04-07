@@ -30,6 +30,7 @@
 ![get-img](./demo/my-components/get-img-3.png)
 
 ## Img
+### Выполняет Vladimir
 ### HTML
 ```html
 <gen-img></gen-img>
@@ -43,6 +44,8 @@
 ```html
 <gen-dot></gen-dot>
 ```
+### Реализация
+* используется директива color ('primary' | 'warn' | 'pink' | 'gradient' | 'accent' | 'green')
 ![dot](./demo/my-components/dot.png)
 
 ## Datepicker
@@ -50,6 +53,11 @@
 ### HTML
 ```html
 <gen-datepicker></gen-datepicker>
+```
+### Реализация
+Material Angular, для реализации необходим импорт нужного модуля
+```ts
+import {MatDatepickerModule} from '@angular/material/datepicker';
 ```
 ![img-button](./demo/my-components/InputBd.png)
 
@@ -86,6 +94,9 @@
 ### HTML
 ```html
 <gen-textarea></gen-textarea>
+```
+### Реализация
+На вход принимает объект **data**
 ```
 ![textarea](./demo/my-components/textarea.png)
 
@@ -162,6 +173,11 @@
 ```html
 <gen-checkbox></gen-checkbox>
 ```
+### Реализация
+Material Angular, для реализации необходим импорт нужного модуля
+```ts
+import {MatCheckboxModule} from '@angular/material/checkbox';
+```
 ![checkbox](./demo/my-components/checkbox.jpg)
 
 ## InputLocation
@@ -170,6 +186,8 @@
 ```html
 <gen-input-location></gen-input-location>
 ```
+### Реализация
+При вводе пользователем адреса, подтягивается с сервера предложенные результаты
 ![input-location](./demo/my-components/input-location.jpg)
 
 ## TrackbarDistance
@@ -201,6 +219,7 @@
 * reverse - задний цвет ставится на белый и цвет текста устанавливается на выбранный из color
 
 ## GenIcon
+### Реализация Alexander
 ### HTML
 ```html
 <gen-icon>name</gen-icon>
