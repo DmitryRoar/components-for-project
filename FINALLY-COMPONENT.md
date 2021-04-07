@@ -171,6 +171,68 @@
 * bottom - закругление обводки по нижнему левому и правому углу 
 * reverse - задний цвет ставится на белый и цвет текста устанавливается на выбранный из color
 
+## GenIcon
+### HTML
+```html
+<gen-icon>name</gen-icon>
+<mat-icon svgIcon="name"></mat-icon>
+```
+### Цвета
+* purple #061283 
+* orange #FF7A3D
+* white #FFFFFF
+* white-gray #DDE2E7
+* blue-gradient linear-gradient(90deg, #2C83DA 0%, #4AB7F8 100%)
+### Размеры height: auto; width:
+* xxl 40px
+* xl 38px
+* l 30px
+* m 26px
+* s 20px
+* xs 16px
+* xxs 11px
+
+
+## TextList
+### Цвета: 
+<ul>
+<li> #343A40 </li>
+<li> #000 </li>
+<li> #061283 </li>
+<li> #BEDDFC </li>
+<li> #1E2022 </li>
+<li> #B1BAC9 </li>
+<li> #c2c2c2 </li>
+<li> #FF7A3D </li>
+<li> #fff </li>
+</ul>
+
+### Размеры:
+<ul>
+<li> 45px </li>
+<li> 20px </li>
+<li> 14px </li>
+<li> 35px </li>
+<li> 25px </li>
+<li> 12px </li>
+<li> 18px </li>
+<li> 16px </li>
+<li> 15px </li>
+<li> 30px </li>
+</ul>
+
+### Толщина:
+<ul>
+<li> 500 </li>
+<li> 300 </li>
+<li> 400 </li>
+<li> 700 </li>
+</ul>
+
+### Положение: 
+* center
+* right
+
 ```html
 <gen-icon></gen-icon>
 <gen-img></gen-img>
@@ -192,53 +254,3 @@
 <gen-input-search></gen-input-search>
 <gen-btn-dot></gen-btn-dot>
 ```
-## GenIcon
-```html
-<gen-icon>name</gen-icon>
-<mat-icon svgIcon='name'></mat-icon>
-```
-### Цвета
-* purple #061283 
-* orange #FF7A3D
-* white #FFFFFF
-* white-gray #DDE2E7
-* blue-gradient linear-gradient(90deg, #2C83DA 0%, #4AB7F8 100%)
-### Размеры height: auto; width:
-* xxl 40px
-* xl 38px
-* l 30px
-* m 26px
-* s 20px
-* xs 16px
-* xxs 11px
-
-## TextList
-### Цвета: 
-* #343A40
-* #000
-* #061283
-* #BEDDFC
-* #1E2022
-* #B1BAC9
-* #c2c2c2
-* #FF7A3D
-* #fff
-### Размеры:
-* 45px
-* 20px
-* 14px
-* 35px
-* 25px
-* 12px
-* 18px
-* 16px
-* 15px
-* 30px
-### Толщина:
-* 500
-* 300
-* 400
-* 700
-### Положение: 
-* center
-* right
