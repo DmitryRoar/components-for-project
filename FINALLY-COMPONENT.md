@@ -6,20 +6,6 @@
 ```
 ### Реализация
 Принимает минимальное, максимальное и значение шага. Дополнительно принимает метку, которая будет отображаться возле текущего выбранного значения. <br>
-### Цвета
-* purple #061283 
-* orange #FF7A3D
-* white #FFFFFF
-* white-gray #DDE2E7
-* blue-gradient linear-gradient(90deg, #2C83DA 0%, #4AB7F8 100%)
-### Размеры height: auto; width:
-* xxl 40px
-* xl 38px
-* l 30px
-* m 26px
-* s 20px
-* xs 16px
-* xxs 11px
 ![trackbar-distance](./demo/my-components/trackbar-distance.jpg)
 
 ## Icon
@@ -37,6 +23,20 @@
 * s
 * xs
 * xxs. <br>
+### Цвета
+* purple #061283 
+* orange #FF7A3D
+* white #FFFFFF
+* white-gray #DDE2E7
+* blue-gradient linear-gradient(90deg, #2C83DA 0%, #4AB7F8 100%)
+### Размеры height: auto; width:
+* xxl 40px
+* xl 38px
+* l 30px
+* m 26px
+* s 20px
+* xs 16px
+* xxs 11px
 ![get-img](./demo/my-components/get-img.png)
 ![get-img](./demo/my-components/get-img2.png)
 ![get-img](./demo/my-components/get-img-3.png)
