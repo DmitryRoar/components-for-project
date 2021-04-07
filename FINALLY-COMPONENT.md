@@ -110,28 +110,6 @@
 ```
 ![student-card](./demo/my-components/student-card.png)
 
-## BtnRound
-### HTML
-```html
-<button mat-flat-button>
-  <get-icon></get-icon>
-</button>
-<button mat-flat-button class="reverse" color="accent">
-  <get-icon></get-icon>
-</button>
-```
-![btn-round](./demo/my-components/btn-round.png)
-
-## BtnCircle
-### HTML
-```html
-<button mat-flat-button class="reverse circle">
-  <gen-icon></gen-icon>
-</button>
-```
-![img-button](./demo/my-components/img-button.png)
-![btn-icon](./demo/my-components/btn-icon.png)
-
 [prev list](https://github.com/DmitryRoar/components-for-project/blob/master/COMPONENTS.md)
 
 gen component
