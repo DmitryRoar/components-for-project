@@ -247,6 +247,8 @@ import {MatCheckboxModule} from '@angular/material/checkbox';
 ```html
 <gen-img></gen-img>
 ```
+### Реализация
+элемент с изображением и текстом <br>
 ![get-img](./demo/my-components/get-img-4.png)
 ![get-img](./demo/my-components/get-img-5.png)
 
@@ -256,6 +258,8 @@ import {MatCheckboxModule} from '@angular/material/checkbox';
 ```html
 <gen-card></gen-card>
 ```
+### Реализация
+элемент с изображением и текстом <br>
 ![schedule-img-empty](./demo/my-components/schedule-img-empty.png)
 ![schedule-img-empty](./demo/my-components/schedule-img-empty-2.png)
 
@@ -265,6 +269,8 @@ import {MatCheckboxModule} from '@angular/material/checkbox';
 ```html
 <gen-input></gen-input>
 ```
+### Реализация
+Данный компонент используется для ввода данных пользователем, определять функцию обработки вводных внешне используя атрибут и ввод/вывод заданного типа, функции в событии компонента <br>
 ![input](./demo/my-components/input.png)
 
 ## SelectMultiple
@@ -273,6 +279,8 @@ import {MatCheckboxModule} from '@angular/material/checkbox';
 ```html
 <gen-select-multiple></gen-select-multiple>
 ```
+### Реализация
+Данный компонент drop down check-list при активации выводит список чек-боксов <br>
 ![select-multiple](./demo/my-components/select-multiple.jpg)
 
 ## Radiobutton
@@ -281,6 +289,8 @@ import {MatCheckboxModule} from '@angular/material/checkbox';
 ```html
 <gen-radio-button></gen-radio-button>
 ```
+### Реализация
+Данный компонент позволяет выбирать между двумя  возможными значениями переменной, название и функция определяется внешне через вход/выход компонента <br>
 ![radio-button](./demo/my-components/radiobutton.png)
 
 ## ChatBubble
@@ -289,6 +299,8 @@ import {MatCheckboxModule} from '@angular/material/checkbox';
 ```html
 <gen-chat-bubble></gen-chat-bubble>
 ```
+### Реализация
+Данный компонент представляет из себя chat-bubble используемый в сhat flows в качестве вывода входных/выходных сообщений в чате <br>
 ![chat-bubble](./demo/my-components/chat-bubble.png)
 
 ## TextList
