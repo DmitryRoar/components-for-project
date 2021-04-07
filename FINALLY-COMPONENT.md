@@ -137,35 +137,6 @@ import {MatButtonModule} from '@angular/material/button';
 ```
 ![button](./demo/my-components/button.png)
 
-## Dot
-### Выполняет Dmitry
-### HTML
-```html
-<gen-dot></gen-dot>
-```
-### Реализация
-используется директива color:
-* primary 
-* warn
-* pink
-* gradient
-* accent
-* green <br>
-![dot](./demo/my-components/dot.png)
-
-## Datepicker
-### Выполняет Dmitry
-### HTML
-```html
-<gen-datepicker></gen-datepicker>
-```
-### Реализация
-Material Angular, для реализации необходим импорт нужного модуля
-```ts
-import {MatDatepickerModule} from '@angular/material/datepicker';
-```
-![img-button](./demo/my-components/InputBd.png)
-
 ## BtnFab
 ### Выполняет Dmitry
 ### HTML
@@ -196,6 +167,35 @@ Material Angular, для реализации необходим импорт н
 import {MatButtonModule} from '@angular/material/button';
 ```
 ![btn-dot](./demo/my-components/btn-dot.png)
+
+## Dot
+### Выполняет Dmitry
+### HTML
+```html
+<gen-dot></gen-dot>
+```
+### Реализация
+используется директива color:
+* primary 
+* warn
+* pink
+* gradient
+* accent
+* green <br>
+![dot](./demo/my-components/dot.png)
+
+## Datepicker
+### Выполняет Dmitry
+### HTML
+```html
+<gen-datepicker></gen-datepicker>
+```
+### Реализация
+Material Angular, для реализации необходим импорт нужного модуля
+```ts
+import {MatDatepickerModule} from '@angular/material/datepicker';
+```
+![date-picker](./demo/my-components/InputBd.png)
 
 ## Textarea
 ### Выполняет Dmitry
