@@ -97,7 +97,7 @@
 ```
 ![select-multiple](./demo/my-components/select-multiple.jpg)
 
-## SelectMultiple
+## Avatar
 ### HTML
 ```html
 <gen-avatar></gen-avatar>
