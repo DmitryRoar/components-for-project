@@ -78,8 +78,7 @@
 * xxl 215x215
 * xl 85x85
 * l 55x55
-* m 30x30.
-<br>
+* m 30x30. <br>
 ![avatar](./demo/my-components/avatar.png)
 
 ## Chip
