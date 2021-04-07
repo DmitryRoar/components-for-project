@@ -20,6 +20,7 @@
 ![button](./demo/my-components/button.png)
 
 ## Icon
+### Выполняет Alexander
 ### HTML
 ```html
 <gen-icon></gen-icon>
@@ -53,6 +54,7 @@
 ![img-button](./demo/my-components/InputBd.png)
 
 ## Select
+### Выполняет Alexander
 ### HTML
 ```html
 <gen-select></gen-select>
@@ -63,6 +65,7 @@
 ![select-subject](./demo/my-components/gen-select-time-set-2.png)
 
 ## Card
+### Выполняет Vladimir
 ### HTML
 ```html
 <gen-card></gen-card>
@@ -71,6 +74,7 @@
 ![schedule-img-empty](./demo/my-components/schedule-img-empty-2.png)
 
 ## CalendarWeek
+### Выполняет Alexander
 ### HTML
 ```html
 <gen-calendar-week></gen-calendar-week>
@@ -97,6 +101,7 @@
 ![btn-icon](./demo/my-components/btn-icon.png)
 
 ## Input
+### Выполняет Vladimir
 ### HTML
 ```html
 <gen-input></gen-input>
@@ -104,6 +109,7 @@
 ![input](./demo/my-components/input.png)
 
 ## SelectMultiple
+### Выполняет Vladimir
 ### HTML
 ```html
 <gen-select-multiple></gen-select-multiple>
@@ -111,6 +117,7 @@
 ![select-multiple](./demo/my-components/select-multiple.jpg)
 
 ## Avatar
+### Выполняет Alexander
 ### HTML
 ```html
 <gen-avatar></gen-avatar>
@@ -118,6 +125,7 @@
 ![avatar](./demo/my-components/avatar.png)
 
 ## Chip
+### Выполняет Alexander
 ### HTML
 ```html
 <gen-chip></gen-chip>
@@ -125,6 +133,7 @@
 ![chip](./demo/my-components/chip.jpg)
 
 ## InputSearch
+### Выполняет Alexander
 ### HTML
 ```html
 <gen-input-search></gen-input-search>
@@ -140,6 +149,7 @@
 ![btn-dot](./demo/my-components/btn-dot.png)
 
 ## Radiobutton
+### Выполняет Vladimir
 ### HTML
 ```html
 <gen-radio-button></gen-radio-button>
@@ -163,6 +173,7 @@
 ![input-location](./demo/my-components/input-location.jpg)
 
 ## TrackbarDistance
+### Выполняет Alexander
 ### HTML
 ```html
 <gen-trackbar-distance></gen-trackbar-distance>
@@ -170,6 +181,7 @@
 ![trackbar-distance](./demo/my-components/trackbar-distance.jpg)
 
 ## ChatBubble
+### Выполняет Vladimir
 ### HTML
 ```html
 <gen-chat-bubble></gen-chat-bubble>
@@ -281,4 +293,25 @@
 <gen-textarea></gen-textarea>
 <gen-datepicker></gen-datepicker>
 <gen-dot></gen-dot>
+```
+
+## Выполняет Alexander
+```html
+<gen-icon></gen-icon>
+<gen-select></gen-select>
+<gen-calendar-week></gen-calendar-week>
+<gen-input-search></gen-input-search>
+<gen-avatar></gen-avatar>
+<gen-trackbar-distance></gen-trackbar-distance>
+<gen-chip></gen-chip>
+```
+
+## Выполняет Vladimir
+```html
+<gen-input></gen-input>
+<gen-select-multiple></gen-select-multiple>
+<gen-img></gen-img>
+<gen-card></gen-card>
+<gen-radio-button></gen-radio-button>
+<gen-chat-bubble></gen-chat-bubble>
 ```
