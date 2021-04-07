@@ -45,7 +45,7 @@
 <gen-dot></gen-dot>
 ```
 ### Реализация
-* используется директива color ('primary' | 'warn' | 'pink' | 'gradient' | 'accent' | 'green')
+используется директива color ('primary' | 'warn' | 'pink' | 'gradient' | 'accent' | 'green') <br>
 ![dot](./demo/my-components/dot.png)
 
 ## Datepicker
