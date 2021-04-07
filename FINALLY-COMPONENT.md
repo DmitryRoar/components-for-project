@@ -22,6 +22,11 @@
 ![get-img](./demo/my-components/get-img.png)
 ![get-img](./demo/my-components/get-img2.png)
 ![get-img](./demo/my-components/get-img-3.png)
+
+## Img
+```html
+<gen-img></gen-img>
+```
 ![get-img](./demo/my-components/get-img-4.png)
 ![get-img](./demo/my-components/get-img-5.png)
 
@@ -44,47 +49,12 @@
 ![select](./demo/my-components/select.png)
 ![select-student](./demo/my-components/select-student.png)
 ![select-subject](./demo/my-components/select-subject.png)
+![select-subject](./demo/my-components/gen-select-time-set-2.png)
 
-
-## Validation
+## Card
 ### HTML
 ```html
-<gen-validation></gen-validation>
-```
-![validation-alert](./demo/my-components/validation-alert.png)
-
-## CardEmoji
-### HTML
-```html
-<gen-card-emoji></gen-card-emoji>
-```
-![card-emoji](./demo/my-components/emoji-feedback.png)
-
-## CardSchedule
-### HTML
-```html
-<gen-card-schedule></gen-card-schedule>
-```
-![schedule-card](./demo/my-components/schedule-card.png)
-
-## BtnFapMenu
-### HTML
-```html
-<gen-fap-menu></gen-fap-menu>
-```
-![fap-button-menu](./demo/my-components/fap-button-menu.png)
-
-## CardTitle
-### HTML
-```html
-<gen-card-title></gen-card-title>
-```
-![lesson-card-header](./demo/my-components/lesson-card-header.png)
-
-## CardEmpty
-### HTML
-```html
-<gen-card-empty></gen-card-empty>
+<gen-card></gen-card>
 ```
 ![schedule-img-empty](./demo/my-components/schedule-img-empty.png)
 ![schedule-img-empty](./demo/my-components/schedule-img-empty-2.png)
@@ -103,28 +73,82 @@
 ```
 ![textarea](./demo/my-components/textarea.png)
 
-## CardLesson
+## BtnFab
 ### HTML
 ```html
-<gen-card-lesson></gen-card-lesson>
+<button mat-fab class="reverse">
+  <gen-icon></gen-icon>
+</button>
 ```
-![student-card](./demo/my-components/student-card.png)
+![img-button](./demo/my-components/img-button.png)
+![btn-icon](./demo/my-components/btn-icon.png)
 
-[prev list](https://github.com/DmitryRoar/components-for-project/blob/master/COMPONENTS.md)
+## Input
+### HTML
+```html
+<gen-input></gen-input>
+```
+![input](./demo/my-components/input.png)
 
-gen component
+## SelectMultiple
+### HTML
+```html
+<gen-select-multiple></gen-select-multiple>
+```
+![select-multiple](./demo/my-components/select-multiple.jpg)
+
+## SelectMultiple
+### HTML
+```html
+<gen-avatar></gen-avatar>
+```
+![avatar](./demo/my-components/avatar.png)
+
+## Chip
+### HTML
+```html
+<gen-chip></gen-chip>
+```
+![chip](./demo/my-components/chip.jpg)
+
+## InputSearch
+### HTML
+```html
+<gen-input-search></gen-input-search>
+```
+![input-search](./demo/my-components/input-search.png)
+
+## BtnDot
+### HTML
+```html
+<gen-btn-dot></gen-btn-dot>
+```
+![btn-dot](./demo/my-components/btn-dot.png)
+
+## Button
+### Цвета
+* primary - оранжевый цвет
+* accent - темно-синий цвет
+* warn - красный цвет
+* accent-gradient - темно-синий градиент
+### Классы
+* corner - закругление обводки на нижнем правом углу ставится на 0
+* bottom - закругление обводки по нижнему левому и правому углу 
+* reverse - задний цвет ставится на белый и цвет текста устанавливается на выбранный из color
+
 ```html
 <gen-icon></gen-icon>
+<gen-img></gen-img>
 <gen-dot></gen-dot>
+<gen-input></gen-input>
 <gen-textarea></gen-textarea>
 <gen-datepicker></gen-datepicker>
 <gen-select></gen-select>
-<gen-validation></gen-validation>
-<gen-card-emoji></gen-card-emoji>
-<gen-card-schedule></gen-card-schedule>
-<gen-card-title></gen-card-title>
-<gen-card-lesson></gen-card-lesson>
-<gen-fap-menu></gen-fap-menu>
-<gen-card-empty></gen-card-empty>
+<gen-select-multiple></gen-select-multiple>
+<gen-card></gen-card>
+<gen-avatar></gen-avatar>
+<gen-chip></gen-chip>
 <gen-calendar-week></gen-calendar-week>
+<gen-input-search></gen-input-search>
+<gen-btn-dot></gen-btn-dot>
 ```
