@@ -204,7 +204,7 @@ import {MatDatepickerModule} from '@angular/material/datepicker';
 <gen-textarea></gen-textarea>
 ```
 ### Реализация
-На вход принимает объект **data**
+На вход принимает объект **data** <br>
 ![textarea](./demo/my-components/textarea.png)
 
 ## Checkbox
