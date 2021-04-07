@@ -125,6 +125,34 @@
 ```
 ![btn-dot](./demo/my-components/btn-dot.png)
 
+## Radiobutton
+### HTML
+```html
+<gen-radio-button></gen-radio-button>
+```
+![radio-button](./demo/my-components/radiobutton.jpg)
+
+## Checkbox
+### HTML
+```html
+<gen-checkbox></gen-checkbox>
+```
+![checkbox](./demo/my-components/checkbox.jpg)
+
+## InputLocation
+### HTML
+```html
+<gen-input-location></gen-input-location>
+```
+![input-location](./demo/my-components/input-location.jpg)
+
+## TrackbarDistance
+### HTML
+```html
+<gen-trackbar-distance></gen-trackbar-distance>
+```
+![trackbar-distance](./demo/my-components/trackbar-distance.jpg)
+
 ## Button
 ### Цвета
 * primary - оранжевый цвет
@@ -147,8 +175,58 @@
 <gen-select-multiple></gen-select-multiple>
 <gen-card></gen-card>
 <gen-avatar></gen-avatar>
+<gen-radio-button></gen-radio-button>
+<gen-checkbox></gen-checkbox>
+<gen-input-location></gen-input-location>
+<gen-trackbar-distance></gen-trackbar-distance>
 <gen-chip></gen-chip>
 <gen-calendar-week></gen-calendar-week>
 <gen-input-search></gen-input-search>
 <gen-btn-dot></gen-btn-dot>
 ```
+
+## TextList
+Цвета: 
+#343A40
+#000
+#061283
+#BEDDFC
+#1E2022
+#B1BAC9
+#c2c2c2
+#FF7A3D
+#fff
+Размеры:
+45px
+20px
+14px
+35px
+25px
+12px
+18px
+16px
+15px
+30px
+Толщина:
+500
+300
+400
+700
+Положение: 
+center
+right
+
+## Colors
+purple #061283 #061283
+orange #FF7A3D #FF7A3D
+white #FFFFFF #FFFFFF
+white-gray #FFFFFF #DDE2E7
+blue-gradient linear-gradient(90deg, #2C83DA 0%, #4AB7F8 100%)
+Sizes height: auto; width:
+xxl 40px
+xl 38px
+l 30px
+m 26px
+s 20px
+xs 16px
+xxs 11px
