@@ -1,3 +1,108 @@
+## TrackbarDistance
+### Выполняет Alexander
+### HTML
+```html
+<gen-trackbar-distance></gen-trackbar-distance>
+```
+### Реализация
+Принимает минимальное, максимальное и значение шага. Дополнительно принимает метку, которая будет отображаться возле текущего выбранного значения. <br>
+### Цвета
+* purple #061283 
+* orange #FF7A3D
+* white #FFFFFF
+* white-gray #DDE2E7
+* blue-gradient linear-gradient(90deg, #2C83DA 0%, #4AB7F8 100%)
+### Размеры height: auto; width:
+* xxl 40px
+* xl 38px
+* l 30px
+* m 26px
+* s 20px
+* xs 16px
+* xxs 11px
+![trackbar-distance](./demo/my-components/trackbar-distance.jpg)
+
+## Icon
+### Выполняет Alexander
+### HTML
+```html
+<gen-icon></gen-icon>
+```
+### Реализация
+Принимает название иконки, и название размера: 
+* xxl 
+* xl
+* l
+* m 
+* s
+* xs
+* xxs. <br>
+![get-img](./demo/my-components/get-img.png)
+![get-img](./demo/my-components/get-img2.png)
+![get-img](./demo/my-components/get-img-3.png)
+
+## Select
+### Выполняет Alexander
+### HTML
+```html
+<gen-select></gen-select>
+```
+### Реализация
+Принимает массив опций для выбора, запрет на пустое поле (если выбор не задан, то выбранным станет первый элемент в списке опций).
+Имеет исходящее событие выбора опции. <br>
+![select](./demo/my-components/select.png)
+![select-student](./demo/my-components/select-student.png)
+![select-subject](./demo/my-components/select-subject.png)
+![select-subject](./demo/my-components/gen-select-time-set-2.png)
+
+## CalendarWeek
+### Выполняет Alexander
+### HTML
+```html
+<gen-calendar-week></gen-calendar-week>
+```
+### Реализация
+Компонент сам генерирует дни недели в соответствии текущей даты.
+Имеет исходящее событие выбора даты.
+На вход принимает выбранную дату. <br>
+![week-calendar](./demo/my-components/week-calendar.png)
+
+## Avatar
+### Выполняет Alexander
+### HTML
+```html
+<gen-avatar></gen-avatar>
+```
+### Реализация
+Принимать путь к изображению и размер:
+* xxl 215x215
+* xl 85x85
+* l 55x55
+* m 30x30.
+<br>
+![avatar](./demo/my-components/avatar.png)
+
+## Chip
+### Выполняет Alexander
+### HTML
+```html
+<gen-chip></gen-chip>
+```
+### Реализация
+Принимает цвет и текст. Текст принимать через ng-content или входящий параметр. <br>
+![chip](./demo/my-components/chip.jpg)
+
+## InputSearch
+### Выполняет Alexander
+### HTML
+```html
+<gen-input-search></gen-input-search>
+```
+### Реализация
+При активации данного компонента используя overlay отображать компонент с фоном на всю страницу ниже шапки.
+Компонент отображает поле ввода, во время ввода текста излучать событие изменение текста. Принимать список опций для отображения вариантов выбора под элементом ввода. После выбора одного из вариантов излучить события выбора опции и прекратить отображение компонента. <br>
+![input-search](./demo/my-components/input-search.png)
+
 ## BtnCorner
 ### Выполняет Dmitry
 ### HTML
@@ -19,25 +124,6 @@
 ```
 ![button](./demo/my-components/button.png)
 
-## Icon
-### Выполняет Alexander
-### HTML
-```html
-<gen-icon></gen-icon>
-```
-![get-img](./demo/my-components/get-img.png)
-![get-img](./demo/my-components/get-img2.png)
-![get-img](./demo/my-components/get-img-3.png)
-
-## Img
-### Выполняет Vladimir
-### HTML
-```html
-<gen-img></gen-img>
-```
-![get-img](./demo/my-components/get-img-4.png)
-![get-img](./demo/my-components/get-img-5.png)
-
 ## Dot
 ### Выполняет Dmitry
 ### HTML
@@ -45,7 +131,13 @@
 <gen-dot></gen-dot>
 ```
 ### Реализация
-используется директива color ('primary' | 'warn' | 'pink' | 'gradient' | 'accent' | 'green') <br>
+используется директива color:
+* primary 
+* warn
+* pink
+* gradient
+* accent
+* green <br>
 ![dot](./demo/my-components/dot.png)
 
 ## Datepicker
@@ -60,34 +152,6 @@ Material Angular, для реализации необходим импорт н
 import {MatDatepickerModule} from '@angular/material/datepicker';
 ```
 ![img-button](./demo/my-components/InputBd.png)
-
-## Select
-### Выполняет Alexander
-### HTML
-```html
-<gen-select></gen-select>
-```
-![select](./demo/my-components/select.png)
-![select-student](./demo/my-components/select-student.png)
-![select-subject](./demo/my-components/select-subject.png)
-![select-subject](./demo/my-components/gen-select-time-set-2.png)
-
-## Card
-### Выполняет Vladimir
-### HTML
-```html
-<gen-card></gen-card>
-```
-![schedule-img-empty](./demo/my-components/schedule-img-empty.png)
-![schedule-img-empty](./demo/my-components/schedule-img-empty-2.png)
-
-## CalendarWeek
-### Выполняет Alexander
-### HTML
-```html
-<gen-calendar-week></gen-calendar-week>
-```
-![week-calendar](./demo/my-components/week-calendar.png)
 
 ## Textarea
 ### Выполняет Dmitry
@@ -107,48 +171,13 @@ import {MatDatepickerModule} from '@angular/material/datepicker';
   <gen-icon></gen-icon>
 </button>
 ```
+### Реализация
+Material Angular, для реализации необходим импорт нужного модуля
+```ts
+import {MatButtonModule} from '@angular/material/button';
+```
 ![img-button](./demo/my-components/img-button.png)
 ![btn-icon](./demo/my-components/btn-icon.png)
-
-## Input
-### Выполняет Vladimir
-### HTML
-```html
-<gen-input></gen-input>
-```
-![input](./demo/my-components/input.png)
-
-## SelectMultiple
-### Выполняет Vladimir
-### HTML
-```html
-<gen-select-multiple></gen-select-multiple>
-```
-![select-multiple](./demo/my-components/select-multiple.jpg)
-
-## Avatar
-### Выполняет Alexander
-### HTML
-```html
-<gen-avatar></gen-avatar>
-```
-![avatar](./demo/my-components/avatar.png)
-
-## Chip
-### Выполняет Alexander
-### HTML
-```html
-<gen-chip></gen-chip>
-```
-![chip](./demo/my-components/chip.jpg)
-
-## InputSearch
-### Выполняет Alexander
-### HTML
-```html
-<gen-input-search></gen-input-search>
-```
-![input-search](./demo/my-components/input-search.png)
 
 ## BtnDot
 ### Выполняет Dmitry
@@ -156,15 +185,12 @@ import {MatDatepickerModule} from '@angular/material/datepicker';
 ```html
 <gen-btn-dot></gen-btn-dot>
 ```
-![btn-dot](./demo/my-components/btn-dot.png)
-
-## Radiobutton
-### Выполняет Vladimir
-### HTML
-```html
-<gen-radio-button></gen-radio-button>
+### Реализация
+Material Angular, для реализации необходим импорт нужного модуля
+```ts
+import {MatButtonModule} from '@angular/material/button';
 ```
-![radio-button](./demo/my-components/radiobutton.png)
+![btn-dot](./demo/my-components/btn-dot.png)
 
 ## Checkbox
 ### Выполняет Dmitry
@@ -188,23 +214,6 @@ import {MatCheckboxModule} from '@angular/material/checkbox';
 ### Реализация
 При вводе пользователем адреса, подтягивается с сервера предложенные результаты
 ![input-location](./demo/my-components/input-location.jpg)
-
-## TrackbarDistance
-### Выполняет Alexander
-### HTML
-```html
-<gen-trackbar-distance></gen-trackbar-distance>
-```
-![trackbar-distance](./demo/my-components/trackbar-distance.jpg)
-
-## ChatBubble
-### Выполняет Vladimir
-### HTML
-```html
-<gen-chat-bubble></gen-chat-bubble>
-```
-![chat-bubble](./demo/my-components/chat-bubble.png)
-
 ## Button
 ### Выполняет Dmitry
 ### Цвета
@@ -217,28 +226,55 @@ import {MatCheckboxModule} from '@angular/material/checkbox';
 * bottom - закругление обводки по нижнему левому и правому углу 
 * reverse - задний цвет ставится на белый и цвет текста устанавливается на выбранный из color
 
-## GenIcon
-### Реализация Alexander
+## Img
+### Выполняет Vladimir
 ### HTML
 ```html
-<gen-icon>name</gen-icon>
-<mat-icon svgIcon="name"></mat-icon>
+<gen-img></gen-img>
 ```
-### Цвета
-* purple #061283 
-* orange #FF7A3D
-* white #FFFFFF
-* white-gray #DDE2E7
-* blue-gradient linear-gradient(90deg, #2C83DA 0%, #4AB7F8 100%)
-### Размеры height: auto; width:
-* xxl 40px
-* xl 38px
-* l 30px
-* m 26px
-* s 20px
-* xs 16px
-* xxs 11px
+![get-img](./demo/my-components/get-img-4.png)
+![get-img](./demo/my-components/get-img-5.png)
 
+## Card
+### Выполняет Vladimir
+### HTML
+```html
+<gen-card></gen-card>
+```
+![schedule-img-empty](./demo/my-components/schedule-img-empty.png)
+![schedule-img-empty](./demo/my-components/schedule-img-empty-2.png)
+
+## Input
+### Выполняет Vladimir
+### HTML
+```html
+<gen-input></gen-input>
+```
+![input](./demo/my-components/input.png)
+
+## SelectMultiple
+### Выполняет Vladimir
+### HTML
+```html
+<gen-select-multiple></gen-select-multiple>
+```
+![select-multiple](./demo/my-components/select-multiple.jpg)
+
+## Radiobutton
+### Выполняет Vladimir
+### HTML
+```html
+<gen-radio-button></gen-radio-button>
+```
+![radio-button](./demo/my-components/radiobutton.png)
+
+## ChatBubble
+### Выполняет Vladimir
+### HTML
+```html
+<gen-chat-bubble></gen-chat-bubble>
+```
+![chat-bubble](./demo/my-components/chat-bubble.png)
 
 ## TextList
 ### Цвета: 
@@ -280,6 +316,7 @@ import {MatCheckboxModule} from '@angular/material/checkbox';
 * center
 * right
 
+## Список UI KIT
 ```html
 <gen-icon></gen-icon>
 <gen-img></gen-img>
@@ -302,17 +339,6 @@ import {MatCheckboxModule} from '@angular/material/checkbox';
 <gen-btn-dot></gen-btn-dot>
 ```
 
-## Выполняет Dmitry
-```html
-<button></button>
-<gen-btn-dot></gen-btn-dot>
-<gen-input-location></gen-input-location>
-<gen-checkbox></gen-checkbox>
-<gen-textarea></gen-textarea>
-<gen-datepicker></gen-datepicker>
-<gen-dot></gen-dot>
-```
-
 ## Выполняет Alexander
 ```html
 <gen-icon></gen-icon>
@@ -322,6 +348,17 @@ import {MatCheckboxModule} from '@angular/material/checkbox';
 <gen-avatar></gen-avatar>
 <gen-trackbar-distance></gen-trackbar-distance>
 <gen-chip></gen-chip>
+```
+
+## Выполняет Dmitry
+```html
+<button></button>
+<gen-btn-dot></gen-btn-dot>
+<gen-input-location></gen-input-location>
+<gen-checkbox></gen-checkbox>
+<gen-textarea></gen-textarea>
+<gen-datepicker></gen-datepicker>
+<gen-dot></gen-dot>
 ```
 
 ## Выполняет Vladimir
