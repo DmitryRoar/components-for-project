@@ -241,28 +241,6 @@ import {MatCheckboxModule} from '@angular/material/checkbox';
 * bottom - закругление обводки по нижнему левому и правому углу 
 * reverse - задний цвет ставится на белый и цвет текста устанавливается на выбранный из color
 
-## Img
-### Выполняет Vladimir
-### HTML
-```html
-<gen-img></gen-img>
-```
-### Реализация
-элемент с изображением и текстом <br>
-![get-img](./demo/my-components/get-img-4.png)
-![get-img](./demo/my-components/get-img-5.png)
-
-## Card
-### Выполняет Vladimir
-### HTML
-```html
-<gen-card></gen-card>
-```
-### Реализация
-элемент с изображением и текстом <br>
-![schedule-img-empty](./demo/my-components/schedule-img-empty.png)
-![schedule-img-empty](./demo/my-components/schedule-img-empty-2.png)
-
 ## Input
 ### Выполняет Vladimir
 ### HTML
@@ -302,6 +280,28 @@ import {MatCheckboxModule} from '@angular/material/checkbox';
 ### Реализация
 Данный компонент представляет из себя chat-bubble используемый в сhat flows в качестве вывода входных/выходных сообщений в чате <br>
 ![chat-bubble](./demo/my-components/chat-bubble.png)
+
+## Img
+### Выполняет Vladimir
+### HTML
+```html
+<gen-img></gen-img>
+```
+### Реализация
+элемент с изображением и текстом <br>
+![get-img](./demo/my-components/get-img-4.png)
+![get-img](./demo/my-components/get-img-5.png)
+
+## Card
+### Выполняет Vladimir
+### HTML
+```html
+<gen-card></gen-card>
+```
+### Реализация
+элемент с изображением и текстом <br>
+![schedule-img-empty](./demo/my-components/schedule-img-empty.png)
+![schedule-img-empty](./demo/my-components/schedule-img-empty-2.png)
 
 ## TextList
 ### Цвета: 
