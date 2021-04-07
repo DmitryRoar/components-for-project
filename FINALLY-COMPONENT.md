@@ -130,7 +130,7 @@
 ```html
 <gen-radio-button></gen-radio-button>
 ```
-![radio-button](./demo/my-components/radiobutton.jpg)
+![radio-button](./demo/my-components/radiobutton.png)
 
 ## Checkbox
 ### HTML
