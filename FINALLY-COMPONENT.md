@@ -31,7 +31,7 @@
 ```
 ![dot](./demo/my-components/dot.png)
 
-## InputBd
+## Datepicker
 ```html
 <gen-datepicker></gen-datepicker>
 ```
@@ -59,13 +59,6 @@
 <gen-card-emoji></gen-card-emoji>
 ```
 ![card-emoji](./demo/my-components/emoji-feedback.png)
-
-## DocLoadList
-### HTML
-```html
-<gen-doc-list></gen-doc-list>
-```
-![photo-button](./demo/my-components/photo.png)
 
 ## CardSchedule
 ### HTML
@@ -129,12 +122,6 @@
 ```
 ![btn-round](./demo/my-components/btn-round.png)
 
-## Select
-### HTML
-```html
-<gen-select></gen-select>
-```
-
 ## BtnCircle
 ### HTML
 ```html
@@ -147,7 +134,19 @@
 
 [prev list](https://github.com/DmitryRoar/components-for-project/blob/master/COMPONENTS.md)
 
+gen component
 ```html
 <gen-icon></gen-icon>
+<gen-dot></gen-dot>
+<gen-datepicker></gen-datepicker>
 <gen-select></gen-select>
+<gen-validation></gen-validation>
+<gen-card-emoji></gen-card-emoji>
+<gen-card-schedule></gen-card-schedule>
+<gen-fap-menu></gen-fap-menu>
+<gen-card-title></gen-card-title>
+<gen-card-empty></gen-card-empty>
+<gen-calendar-week></gen-calendar-week>
+<gen-textarea></gen-textarea>
+<gen-card-lesson></gen-card-lesson>
 ```
