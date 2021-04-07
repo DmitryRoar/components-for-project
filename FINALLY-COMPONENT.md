@@ -1,4 +1,6 @@
 ## BtnCorner
+### Выполняет Dmitry
+### HTML
 ```html
 <button mat-flat-button disabled color="accent" class="corner">
   <gen-icon name=""></gen-icon>
@@ -10,12 +12,15 @@
 ![photo-button](./demo/my-components/photo-button.png)
 
 ## BtnBottom
+### Выполняет Dmitry
+### HTML
 ```html
 <button mat-flat-button class="bottom" color="primary"></button>
 ```
 ![button](./demo/my-components/button.png)
 
 ## Icon
+### HTML
 ```html
 <gen-icon></gen-icon>
 ```
@@ -24,6 +29,7 @@
 ![get-img](./demo/my-components/get-img-3.png)
 
 ## Img
+### HTML
 ```html
 <gen-img></gen-img>
 ```
@@ -31,18 +37,23 @@
 ![get-img](./demo/my-components/get-img-5.png)
 
 ## Dot
+### Выполняет Dmitry
+### HTML
 ```html
 <gen-dot></gen-dot>
 ```
 ![dot](./demo/my-components/dot.png)
 
 ## Datepicker
+### Выполняет Dmitry
+### HTML
 ```html
 <gen-datepicker></gen-datepicker>
 ```
 ![img-button](./demo/my-components/InputBd.png)
 
 ## Select
+### HTML
 ```html
 <gen-select></gen-select>
 ```
@@ -67,6 +78,7 @@
 ![week-calendar](./demo/my-components/week-calendar.png)
 
 ## Textarea
+### Выполняет Dmitry
 ### HTML
 ```html
 <gen-textarea></gen-textarea>
@@ -74,6 +86,7 @@
 ![textarea](./demo/my-components/textarea.png)
 
 ## BtnFab
+### Выполняет Dmitry
 ### HTML
 ```html
 <button mat-fab class="reverse">
@@ -119,6 +132,7 @@
 ![input-search](./demo/my-components/input-search.png)
 
 ## BtnDot
+### Выполняет Dmitry
 ### HTML
 ```html
 <gen-btn-dot></gen-btn-dot>
@@ -133,6 +147,7 @@
 ![radio-button](./demo/my-components/radiobutton.png)
 
 ## Checkbox
+### Выполняет Dmitry
 ### HTML
 ```html
 <gen-checkbox></gen-checkbox>
@@ -140,6 +155,7 @@
 ![checkbox](./demo/my-components/checkbox.jpg)
 
 ## InputLocation
+### Выполняет Dmitry
 ### HTML
 ```html
 <gen-input-location></gen-input-location>
@@ -161,6 +177,7 @@
 ![chat-bubble](./demo/my-components/chat-bubble.png)
 
 ## Button
+### Выполняет Dmitry
 ### Цвета
 * primary - оранжевый цвет
 * accent - темно-синий цвет
