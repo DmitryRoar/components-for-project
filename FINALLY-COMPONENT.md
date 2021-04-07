@@ -186,6 +186,7 @@
 <gen-checkbox></gen-checkbox>
 <gen-input-location></gen-input-location>
 <gen-trackbar-distance></gen-trackbar-distance>
+<gen-chat-bubble></gen-chat-bubble>
 <gen-chip></gen-chip>
 <gen-calendar-week></gen-calendar-week>
 <gen-input-search></gen-input-search>
